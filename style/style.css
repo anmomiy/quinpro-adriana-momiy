@@ -1,0 +1,953 @@
+/* Estilos Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Header */
+header{
+    background-color: #000000;
+}
+.flex-header{
+    display: grid;
+    grid-template-areas: 
+    "quinproLogo flex-nav"
+    ;
+    grid-template-columns: 40% 60%;
+} 
+.flex-nav{
+    align-self: center;
+    justify-self: center;
+}
+.quinproLogo{
+    max-width: 70%;
+    min-width: 150px;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    grid-area: quinproLogo;
+}
+/*Barra Menu*/
+.flex-nav{
+    grid-area: flex-nav;
+}
+.menuPrincipal{
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.menuPrincipal li{
+    background-color: black;
+    display:inline-block;
+    text-align: center;
+    min-width: 12vw;
+    min-height: 4vh;
+    padding: 12px 8px;
+}
+.menuPrincipal li a{
+    color:white;
+    text-decoration:none;
+    font-size:90%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menuPrincipal li:hover{
+    background: rgb(109, 104, 104);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: white;
+}
+.menuProductos{
+    position: relative;
+}
+.menuProductos ul{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    display: none;
+    z-index: 20;
+}
+.menuProductos ul li{
+    background-color: black;
+    border-top: solid;
+    width: 100%;
+    border-top-width: 0.1px;
+    border-top-color: white;
+}
+.menuProductos:hover ul{ 
+    display: block;
+}
+.menuFaq{
+    position: relative;
+}
+.menuFaq ul{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    display: none;
+    z-index: 20;
+}
+.menuFaq ul li{
+    background-color: black;
+    width: 100%;
+    border-top: solid;
+    border-top-width: 0.1px;
+    border-top-color: white;
+}
+.menuFaq:hover ul{ 
+    display: block;
+}
+.lineaHeadMain{
+    width: 100%;
+    color:rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;
+
+}
+/*Footer*/
+footer{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.flex-footer{
+    display: grid;
+    grid-template-areas:
+    "footerEnlaces footerFormulario footerRedes"
+    "footerLinea footerLinea footerLinea"
+    "copyright copyright copyright" 
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.footerEnlaces, .footerFormulario, .footerRedes{
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.footerFormulario form{
+    display: flex;
+    flex-direction: column;
+}
+.footerFormulario form input{
+    max-width: 200px;
+    min-width: 80px;
+    align-self: center;
+}
+.footerLRedes {
+    display: flex;
+    flex-direction: column;
+}
+/*Seccion Enlaces footer */
+footer h4{
+    color:white;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.footerEnlaces{
+    grid-area: footerEnlaces;
+}
+.footerEnlaces ul{
+    list-style: none;
+    line-height: 200%;
+    margin-top: 5%;
+}
+.footerEnlaces a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+}
+/*Seccion Formulario footer*/
+.footerFormulario{
+    grid-area: footerFormulario;
+}
+.footerFormulario form{
+    margin-top: 5%;
+}
+.footerFormulario label{
+    line-height: 200%;
+    color:white;
+}
+.footerFormulario input{
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 2%;
+}
+.botonFormulario{
+    padding: 2%;
+}
+/*Seccion Redes footer*/
+.footerRedes{
+    grid-area: footerRedes;
+}
+.footerLRedes{
+    margin-top: 5%;
+}
+.footerRedes a{
+    text-decoration: none;
+    color: white; 
+    font-size: 16px;
+    line-height: 200%;
+
+}
+.footerRedes img{
+    width: 40px;
+    height: 40px;
+}
+/*Copyright*/
+.footerLinea{
+    width:100%;
+    border-top: 2px solid white;
+    grid-area: footerLinea;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    grid-area: copyright;
+}
+.lineaMainFoot{
+    width: 100%;
+    color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+  
+}
+/*Body Index*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 5%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+main hr{
+    color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+}
+/*improvisando carrusel*/
+.carrusel{ 
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: 45vh;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+}
+.carrusel img{
+    width: 50%;
+    height: 50%;
+
+}
+.carrusel img:hover{
+    width: 95%;
+    height: 95%;
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+}
+/*Seccion dos Index */
+.indexSecDos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.indexSecDos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    margin: 0% 10% 5%;
+    padding: 2%;
+    border-style:double;
+    border-color: black;
+}
+.indexSecDos img{
+    width: 48%;
+    height: 400px;
+    border-radius: 50%;
+}
+.indexSecDos p{
+    width: 38%;
+    line-height: 200%;
+    text-align: justify;
+    font-weight: 700;
+    background-color: blanchedalmond;
+    padding: 1%;
+    border-radius: 5%;
+}
+/*Seccion tres Index */
+.indexSecTres{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+.indexSecTres section{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+.indexSecTres section div{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 33%;
+    margin: 0 5% 5% 5%;
+    text-align: center;
+}
+.indexSecTres h4{
+    text-align: center;
+    margin: 5%;
+}
+.indexSecTres img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+.indexSecTres hr{
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 5%;
+}
+/*Main Nosotros*/
+.flex-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-nosotros h2{
+    margin: 5%;
+    align-self: flex-start;
+
+}
+.contenido-nosotros{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-style: double;
+    border-color: black;
+}
+.contenido-nosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+}
+.contenido-nosotros img{
+    border-radius: 25%;
+    margin: 5%;
+    width: 40%;
+}
+.contenido-nosotros p{
+    width: 40%;
+    background-color: blanchedalmond;
+    margin: 5%;
+    padding: 5%;
+    line-height: 200%;
+}
+/*Main Productos*/
+.flex-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.tituloFaq, .tituloProductos{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+.MenuLateral{ /* Funciona para Productos y FAQ*/
+    background-color: black;
+    max-width: 350px;
+    height: 450px;
+    position:sticky;
+    top: 20px;
+}
+.barraIzquierda{
+    background-color: black;
+    width: 30%;
+    max-width: 350px;
+    z-index: 15;
+}
+.MenuLateral ul{
+    list-style: none;
+}
+.MenuLateral li{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-left: 5%;
+}
+.MenuLateral li:hover{
+    background-color: rgb(109, 104, 104);
+}
+.MenuLateral a{
+    list-style: none;
+    text-decoration: none;
+    line-height: 400%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.prodContenido{
+    width: 75%;
+}
+.prodContenido div{
+    background-color: blanchedalmond;
+    margin: 5%;
+    padding: 2%;
+}
+.prodContenido ol{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.prodContenido ol li{
+    margin: 2%;
+    background-color: rgb(250, 181, 154);
+    padding: 2%;
+    border-radius: 5%;
+    font-size: 18px;
+    text-align: center;
+}
+.prodContenido img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    border-radius: 50%;
+}
+/*Main FAQ*/
+.flex-faq{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+.faqPrincipal{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.faqPrincipal h3{
+    margin-bottom: 7%;
+}
+.accordion {
+    margin: 0 auto 5%;
+    width: 100%;
+    list-style: none;
+}    
+.accordionWrapper {
+    list-style: none;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    width: 80%;
+    max-width: 800px;
+}   
+.accordionItem {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+.accordionItem {
+    background: blanchedalmond;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 1px;
+    padding-bottom: 0.5rem;
+}
+.accordionItem h4{
+    font-size: 20px;
+}
+.accordionItem p{
+    font-size: 16px;
+    padding-left: 1%;
+}
+.accordionItem span {
+    color: #000000;
+    margin-top: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    transition: all 0.2s ease-in;
+}
+.accordionItem input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+.accordionItem input[type=checkbox]:checked ~ div.panel {
+    float: left;
+    margin: 5px 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+.accordionItem input[type=checkbox]:checked ~ span {
+    transform: rotate(180deg);
+}
+/*Main Contactos*/
+.flex-contactos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-contactos h2{
+    margin: 5%;
+    align-self: flex-start;
+
+}
+.contactoUno{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contactoUno img{
+    width: 90%;
+    margin: 5%;
+    border: solid black 1px;
+    border-radius: 15%;
+}
+.contactoUno div{
+    margin: 2%;
+    padding: 2%;
+    width: 500px;
+    background-color: blanchedalmond;
+    border-radius: 15%;
+}
+.contactoUno h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+}
+.contactoUno p{
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 5%;
+}
+.contactoUno div img{
+    width: 40px;
+    height: 40px;
+    border-style: none;
+}
+.formularioContacto fieldset{
+    padding: 5%;
+    width: 600px;
+    line-height: 300%;
+    margin-bottom: 5%;
+}
+.formularioContacto textarea{
+    width: 500px;
+}
+/* Responsive */
+    /* Tablet */
+    @media (min-width: 481px) and (max-width: 1023px){
+        /*Header*/
+        .flex-header{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .flex-nav{
+            width: 100%;
+        }
+        .menuProductos ul, .menuFaq ul{
+            display:none;
+        }
+        /*Footer*/
+        .flex-footer{
+            display: grid;
+            grid-template-areas:
+            "footerEnlaces footerFormulario footerRedes"
+            "footerLinea footerLinea footerLinea"
+            "copyright copyright copyright" 
+            ;
+            grid-template-columns: 1fr 1.5fr 1.5fr;
+            justify-content: center;
+        }
+        /*improvisando carrusel*/
+        .carrusel{ 
+            height: 30vh;
+
+        }
+        .carrusel img{
+            width: 90%;
+            height: 100%;
+            
+        }
+        /*Seccion dos Index */
+        .indexSecDos div{
+            flex-wrap: wrap;
+            width: 80%;
+
+        }
+        .indexSecDos img{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+        }
+        .indexSecDos p{
+            margin-top: 2%;
+            width: 350px;
+        }
+        /*Seccion tres Index */
+        .indexSecTres section{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .indexSecTres section div{
+            min-width: 200px;
+            max-width: 400px;
+            margin: 0 2% 2% 2%;
+        }
+        .indexSecTres h4{
+            max-width: 250px;
+        }
+        .indexSecTres hr{
+            display: none;
+        }
+        /*Nosotros*/
+        .contenido-nosotros{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1000px;
+            justify-content: center;
+            align-content: center;
+        }
+        .contenido-nosotros img{
+            width: 50%;
+            min-width: 300px;
+            max-width: 350px;
+        }
+        .contenido-nosotros p{
+            width: 50%;
+            min-width: 300px;
+            max-width: 350px;
+        }
+        /*Productos*/
+        .flex-productos{
+            display: grid;
+            grid-template-areas: 
+            "barraIzquierda"
+            "prodContenido";
+            grid-template-columns: 100%;
+        }
+        .MenuLateral{ /* Funciona para Productos y FAQ*/
+            max-width: 100%;
+            height: 60px;
+            
+        }
+        .MenuLateral a{
+            text-align: center;
+            margin-top: 2%;
+        }
+        .barraIzquierda{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            position:sticky;
+            top:0px;
+        }
+        .MenuLateral{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .MenuLateral ul{
+            display: flex;
+            flex-direction: row;
+        }
+        .MenuLateral li{
+            border-style: none;
+            margin: 1%;
+            padding: 2%;
+        }
+        .MenuLateral li a{
+            line-height: normal;
+            font-size: 0.95rem;
+        }
+        .tituloFaq, .tituloProductos{
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: 700;
+            align-self: center;
+        }
+        #ofertas, #res, #pollo, #cerdo{
+            scroll-margin-top: 110px;
+        }
+        .prodContenido{
+            width: 100%;
+        }
+        .prodContenido img{
+            width: 90%;
+            height: 90%;
+            min-width: 150px;
+            min-height: auto;
+        }
+        /*FAQ*/
+        .flex-faq{
+            flex-direction: column;
+        }
+        .faqPrincipal{
+            width: 100%;
+        }
+        #sentrega, #sproductos, #snosotros, #otros{
+            scroll-margin-top: 100px;
+        }    
+        .accordionWrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        /*Main Contactos*/
+        .contactoUno{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .contactoUno img{
+            margin: 5%;
+            width: 350px;
+        }
+        .contactoUno div{
+            width: 350px;
+        }
+        .formularioContacto fieldset{
+            width: 80%;
+            min-width: 480px;
+            line-height: 300%;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            flex-direction: column;
+        }
+        .formularioContacto textarea{
+            width: 100%;
+        }
+    }
+    /* Mobile */
+    @media screen and (max-width: 480px){
+        /*Header*/
+        .flex-header{
+            display: flex;
+            flex-direction: column;
+        }
+        .menuPrincipal{
+            flex-direction: column;
+        }
+        .menuProductos ul, .menuFaq ul{
+            display:none;
+        }
+        /*Footer*/
+        .flex-footer{
+            display: grid;
+            grid-template-areas:
+            "footerEnlaces"
+            "footerFormulario"
+            "footerRedes"
+            "footerLinea"
+            "copyright"
+            ;
+            grid-template-columns: 100%;
+            text-align: center;
+        }
+        .flex-footer section{
+            width: 100%;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+
+        }
+        /*improvisando carrusel*/
+        .carrusel{
+            flex-wrap: wrap;
+            height: fit-content;
+            justify-content: center;
+        }
+        .carrusel img{
+            height: 100%;
+            
+        }
+        /*Seccion dos Index */
+        .indexSecDos div{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .indexSecDos img{
+            width: 90%;
+            height: 300px;
+        }
+        .indexSecDos p{
+            width: 80%;
+            line-height: 200%;
+            margin-top: 5%;
+        }
+        /*Seccion tres Index */
+        .indexSecTres section{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .indexSecTres section div{
+            width: 80%;
+        }
+        .indexSecTres hr{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        /*Nosotros*/
+        .contenido-nosotros{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: center;
+            align-content: center;
+        }
+        .contenido-nosotros img{
+            width: 80%;
+        }
+        .contenido-nosotros p{
+            width: 80%;
+        }
+        /*Productos*/
+        .flex-productos{
+            display: grid;
+            grid-template-areas: 
+            "barraIzquierda"
+            "prodContenido";
+            grid-template-columns: 100%;
+        }
+        .MenuLateral{ /* Funciona para Productos y FAQ*/
+            max-width: 100%;
+            height: auto;
+        }
+        .tituloFaq, .tituloProductos{
+            font-size: 16px;
+            text-align: center;
+            font-weight: 700;
+            align-self: center;
+        }
+        .barraIzquierda{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            position:sticky;
+            top:0px;
+        }
+        .MenuLateral{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .MenuLateral ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .MenuLateral li{
+            padding: 2%;
+            min-width: 88px;
+            width: 50%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .MenuLateral ul li a{
+            line-height: normal;
+            font-size: 0.8rem;
+        }
+        #ofertas, #res, #pollo, #cerdo{
+            scroll-margin-top: 150px;
+        }
+        .prodContenido{
+            width: 100%;
+        }
+        .prodContenido img{
+            width: 90%;
+            height: auto;
+            min-width: 100px;
+            min-height: 100px;
+        }
+        /*FAQ*/
+        .flex-faq{
+            display: flex;
+            flex-direction: column;
+        }
+        .faqPrincipal{
+            width: 100%;
+        }
+        #sentrega, #sproductos, #snosotros, #otros{
+            scroll-margin-top: 150px;
+        }
+        .accordionWrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+        .accordionItem h4{
+            font-size: 16px;
+        }
+        .accordionItem p{
+            font-size: 14px;
+        }
+        /*Main Contactos*/
+        .contactoUno{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .contactoUno img{
+            width: 80vw;
+        }
+        .contactoUno div{
+            width: 80vw;
+        }
+        .formularioContacto fieldset{
+            width: 80vw;
+            min-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            flex-direction: column;
+        }
+        .formularioContacto textarea{
+            width: 100%;
+        }
+    }
+
+
