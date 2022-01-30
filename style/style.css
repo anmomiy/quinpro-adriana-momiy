@@ -286,7 +286,7 @@ main hr{
 .indexSecDos p{
     width: 38%;
     line-height: 200%;
-    text-align: justify;
+    text-align:left;
     font-weight: 700;
     background-color: blanchedalmond;
     padding: 1%;
@@ -548,7 +548,7 @@ main hr{
     text-align: left;
 }
 .contactoUno p{
-    text-align: justify;
+    text-align: left;
     font-size: 14px;
     margin-left: 5%;
 }
@@ -820,7 +820,9 @@ main hr{
             flex-wrap: wrap;
         }
         .indexSecTres section div{
-            width: 80%;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .indexSecTres hr{
             width: 90%;
@@ -835,6 +837,8 @@ main hr{
             width: 80%;
             justify-content: center;
             align-content: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .contenido-nosotros img{
             width: 80%;
