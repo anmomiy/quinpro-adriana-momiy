@@ -26,87 +26,21 @@ header{
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
-    grid-area: quinproLogo;
 }
 /*Barra Menu*/
 .flex-nav{
-    grid-area: flex-nav;
-}
-.menuPrincipal{
-    list-style: none;
-    padding:0;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
-
 }
-.menuPrincipal li{
-    background-color: black;
-    display:inline-block;
-    text-align: center;
-    min-width: 12vw;
-    min-height: 4vh;
-    padding: 12px 8px;
-}
-.menuPrincipal li a{
-    color:white;
-    text-decoration:none;
-    font-size:90%;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.menuPrincipal li:hover{
-    background: rgb(109, 104, 104);
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: white;
-}
-.menuProductos{
-    position: relative;
-}
-.menuProductos ul{
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    display: none;
-    z-index: 20;
-}
-.menuProductos ul li{
-    background-color: black;
-    border-top: solid;
-    width: 100%;
-    border-top-width: 0.1px;
-    border-top-color: white;
-}
-.menuProductos:hover ul{ 
-    display: block;
-}
-.menuFaq{
-    position: relative;
-}
-.menuFaq ul{
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    display: none;
-    z-index: 20;
-}
-.menuFaq ul li{
-    background-color: black;
-    width: 100%;
-    border-top: solid;
-    border-top-width: 0.1px;
-    border-top-color: white;
-}
-.menuFaq:hover ul{ 
-    display: block;
+.dropdown-item:hover{
+    background-color: rgba(169, 169, 169, 0.534);
 }
 .lineaHeadMain{
     width: 100%;
     color:rgb(255, 255, 255);
     border-style: solid;
     border-width: 2px;
-
+    margin:0%;
 }
 /*Footer*/
 footer{
@@ -203,8 +137,10 @@ footer h4{
 /*Copyright*/
 .footerLinea{
     width:100%;
-    border-top: 2px solid white;
+    border: 2px solid white;
     grid-area: footerLinea;
+    margin: 0%;
+    opacity: 1;
 }
 .copyright{
     width: 100%;
@@ -217,7 +153,8 @@ footer h4{
     color:rgb(0, 0, 0);
     border-style: solid;
     border-width: 2px;
-  
+    margin: 0%;
+    opacity: 1;
 }
 /*Body Index*/
 body{
@@ -237,27 +174,16 @@ main hr{
     border-style: solid;
     border-width: 2px;
 }
-/*improvisando carrusel*/
-.carrusel{ 
-    display: flex;
-    flex-direction: row;
-    background-color: black;
+/*Carrusel*/
+.carrusel{
     width: 100%;
-    height: 45vh;
-    justify-content: space-evenly;
-    align-items:center;
-    text-align: center;
+    background-color: black;
+    height: fit-content;
 }
-.carrusel img{
-    width: 50%;
-    height: 50%;
-
-}
-.carrusel img:hover{
-    width: 95%;
-    height: 95%;
-    border-style: double;
-    border-color: rgb(255, 255, 255);
+.carousel{
+    width:65vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Seccion dos Index */
 .indexSecDos{
@@ -566,50 +492,6 @@ main hr{
 .formularioContacto textarea{
     width: 500px;
 }
-/*Animaciones*/
-.rotate-vert-center:hover { /*Animacion seccion 3 index*/
-	animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
-@keyframes rotate-vert-center {
-    0% {
-      transform: rotateY(0);
-    }
-    100% {
-      transform: rotateY(360deg);
-    }
-}
-.shadow-drop-2-br { /*Animacion parrafos Nosotors*/
-    animation: shadow-drop-2-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-@keyframes shadow-drop-2-br{
-    0% {
-      transform: translateZ(0) translateX(0) translateY(0);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      transform: translateZ(50px) translateX(-12px) translateY(-12px);
-      box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
-    }
-}
-.tracking-in-expand-fwd-bottom {/*Animacion h3 Productos y FAQ*/
-	animation: tracking-in-expand-fwd-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-@keyframes tracking-in-expand-fwd-bottom {
-    0% {
-      letter-spacing: -0.5em;
-      transform: translateZ(-700px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  
-  
   
 /* Responsive */
     /* Tablet */
@@ -617,14 +499,15 @@ main hr{
         /*Header*/
         .flex-header{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
         }
-        .flex-nav{
-            width: 100%;
+        .navbar{
+            width: 172px;
         }
-        .menuProductos ul, .menuFaq ul{
-            display:none;
+        .quinproLogo{
+            margin-left: auto;
+            margin-right: auto;
         }
         /*Footer*/
         .flex-footer{
@@ -637,15 +520,9 @@ main hr{
             grid-template-columns: 1fr 1.5fr 1.5fr;
             justify-content: center;
         }
-        /*improvisando carrusel*/
-        .carrusel{ 
-            height: 30vh;
-
-        }
-        .carrusel img{
-            width: 90%;
-            height: 100%;
-            
+        /*Carrusel*/
+        .carousel{
+            width: 80vw;
         }
         /*Seccion dos Index */
         .indexSecDos div{
@@ -806,13 +683,14 @@ main hr{
         /*Header*/
         .flex-header{
             display: flex;
-            flex-direction: column;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
         }
-        .menuPrincipal{
-            flex-direction: column;
+        .navbar{
+            width:30%;
         }
-        .menuProductos ul, .menuFaq ul{
-            display:none;
+        .quinproLogo{
+            width:auto;
         }
         /*Footer*/
         .flex-footer{
@@ -833,15 +711,9 @@ main hr{
             margin-bottom: 2.5rem;
 
         }
-        /*improvisando carrusel*/
-        .carrusel{
-            flex-wrap: wrap;
-            height: fit-content;
-            justify-content: center;
-        }
-        .carrusel img{
-            height: 100%;
-            
+        /*Carrusel*/
+        .carousel{
+            width: 100%;
         }
         /*Seccion dos Index */
         .indexSecDos div{
