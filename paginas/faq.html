@@ -72,7 +72,7 @@
                 </nav>
             </section>
             <section class="faqPrincipal"> <!--Uso de acordeones para mostrar/ocultar respuestas a las preguntas-->
-                <h3 id="snosotros" class="tracking-in-expand-fwd-bottom">Sobre Nosotros</h3>
+                <h3 id="snosotros">Sobre Nosotros</h3>
                 <div class="accordion">
                     <ul class="accordionWrapper">
                         <li class="accordionItem">
@@ -101,7 +101,7 @@
                         </li> 
                     </ul>
                 </div>
-                <h3 id="sproductos" class="tracking-in-expand-fwd-bottom">Sobre Los Productos</h3>
+                <h3 id="sproductos">Sobre Los Productos</h3>
                 <div class="accordion">
                     <ul class="accordionWrapper">
                         <li class="accordionItem">
@@ -130,7 +130,7 @@
                         </li> 
                     </ul>
                 </div>     
-                <h3 id="sentrega" class="tracking-in-expand-fwd-bottom">Sobre La Entrega</h3>
+                <h3 id="sentrega">Sobre La Entrega</h3>
                 <div class="accordion">
                     <ul class="accordionWrapper">
                         <li class="accordionItem">
@@ -159,7 +159,7 @@
                         </li> 
                     </ul> 
                 </div> 
-                <h3 id="otros" class="tracking-in-expand-fwd-bottom">Otros</h3>
+                <h3 id="otros">Otros</h3>
                 <div class="accordion">
                     <ul class="accordionWrapper">
                         <li class="accordionItem">
@@ -192,38 +192,46 @@
         </main>
         <hr class="lineaMainFoot">
         <footer class="flex-footer">
-            <section class="footerEnlaces">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="..//index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="footerFormulario">
-                <h4>Recibe nuestro catálogo mensual</h4>
-                <form>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre"/> 
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" name="apellido"/> 
-                    <label for="numero">Celular: </label>
-                    <input type="text" name="numero"/> 
-                    <input type="submit" value="Enviar" class="botonFormulario"/>
-                </form>
-            </section>
-            <section class="footerRedes">
-                <h4>Redes Sociales</h4>
-                <div class="footerLRedes">
-                    <a href="https:www.facebook.com/QUINPRO-Carnes-y-más-100132708454710" target="_blank"><img src="..//assets/imagenes/facebook-icono.png" alt="facebook-icono"> Quinpro </a> 
-                    <a href="https://wa.me/51922296876" target="_blank"><img src="..//assets/imagenes/whatsapp-icono.png" alt="whatsapp-icono"> +51 922 296 876</a> 
-                    <a href="https:www.instagram.com/quinprocarnesymas" target="_blank"><img src="..//assets/imagenes/logo-instagram.png" alt="logo-instagram"> @quinprocarnesymas</a> 
+            <div class="row">
+                <div class="col footerEnlaces">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="..//index.html">Inicio</a></li>
+                        <li><a href="..//paginas/nosotros.html">Nosotros</a></li>
+                        <li><a href="..//paginas/productos.html">Productos</a></li>
+                        <li><a href="..//paginas/faq.html">FAQ</a></li>
+                        <li><a href="..//paginas/contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
-            </section>
-            <hr class="footerLinea">
-            <section class="copyright">
+                <div class="col footerFormulario">
+                    <h4>Recibe nuestro catálogo mensual</h4>
+                    <form>
+                        <div class="mb-3 input-group-sm">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="apellido" class="form-label">Apellido: </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="numero" class="form-label">Celular: </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                    </form>
+                </div>
+                <div class="col footerRedes">
+                    <h4>Redes Sociales</h4>
+                    <div class="footerLRedes">
+                        <a href="https:www.facebook.com/QUINPRO-Carnes-y-más-100132708454710" target="_blank"><img src="..//assets/imagenes/facebook-icono.png" alt="facebook-icono"> Quinpro </a> 
+                        <a href="https://wa.me/51922296876" target="_blank"><img src="..//assets/imagenes/whatsapp-icono.png" alt="whatsapp-icono"> +51 922 296 876</a> 
+                        <a href="https:www.instagram.com/quinprocarnesymas" target="_blank"><img src="..//assets/imagenes/logo-instagram.png" alt="logo-instagram"> @quinprocarnesymas</a> 
+                    </div>
+                </div>
+            </div>
+            <section class="copyright row">
+                <hr class="footerLinea">
                 <h4>&copy; Copyright 2022</h4>
             </section>
         </footer>

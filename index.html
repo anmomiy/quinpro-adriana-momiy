@@ -92,58 +92,64 @@
             </section>
             <section class="indexSecTres">
                 <h3>Productos procesados con los mejores protocolos sanitarios en la puerta de tu hogar</h3>
-                <section>
-                    <div>
+                <section class="row">
+                    <div class="col">
                         <h4>No se requiere un monto mínimo de compra</h4>
-                        <img src="./assets/imagenes/minimo-compra.JPG" alt="minimo-compra" class="rotate-vert-center">
+                        <img src="./assets/imagenes/minimo-compra.JPG" alt="minimo-compra">
                     </div>
-                    <hr>
-                    <div>
+                    <div class="col">
                         <h4>Costo adicional por delivery</h4>
-                        <img src="./assets/imagenes/delivery.JPG" alt="costo-delivery" class="rotate-vert-center">
+                        <img src="./assets/imagenes/delivery.JPG" alt="costo-delivery">
                     </div>
-                    <hr>
-                    <div>
+                    <div class="col">
                         <h4>Despacho de lunes a sábado</h4>
-                        <img src="./assets/imagenes/fechas-entrega.JPG" alt="fechas-entrega" class="rotate-vert-center">
+                        <img src="./assets/imagenes/fechas-entrega.JPG" alt="fechas-entrega">
                     </div>
                 </section>
             </section>
         </main>
         <hr class="lineaMainFoot">
         <footer class="flex-footer">
-            <section class="footerEnlaces">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="./paginas/productos.html">Productos</a></li>
-                    <li><a href="./paginas/faq.html">FAQ</a></li>
-                    <li><a href="./paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="footerFormulario">
-                <h4>Recibe nuestro catálogo mensual</h4>
-                <form>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre"/> 
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" name="apellido"/> 
-                    <label for="numero">Celular: </label>
-                    <input type="text" name="numero"/> 
-                    <input type="submit" value="Enviar" class="botonFormulario"/>
-                </form>
-            </section>
-            <section class="footerRedes">
-                <h4>Redes Sociales</h4>
-                <div class="footerLRedes">
-                    <a href="https:www.facebook.com/QUINPRO-Carnes-y-más-100132708454710" target="_blank"><img src="./assets/imagenes/facebook-icono.png" alt="facebook-icono"> Quinpro </a> 
-                    <a href="https://wa.me/51922296876" target="_blank"><img src="./assets/imagenes/whatsapp-icono.png" alt="whatsapp-icono"> +51 922 296 876</a> 
-                    <a href="https:www.instagram.com/quinprocarnesymas" target="_blank"><img src="./assets/imagenes/logo-instagram.png" alt="logo-instagram"> @quinprocarnesymas</a> 
+            <div class="row">
+                <div class="col footerEnlaces">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+                        <li><a href="./paginas/productos.html">Productos</a></li>
+                        <li><a href="./paginas/faq.html">FAQ</a></li>
+                        <li><a href="./paginas/contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
-            </section>
-            <hr class="footerLinea">
-            <section class="copyright">
+                <div class="col footerFormulario">
+                    <h4>Recibe nuestro catálogo mensual</h4>
+                    <form>
+                        <div class="mb-3 input-group-sm">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="apellido" class="form-label">Apellido: </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <div class="mb-3 input-group-sm">
+                            <label for="numero" class="form-label">Celular: </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                    </form>
+                </div>
+                <div class="col footerRedes">
+                    <h4>Redes Sociales</h4>
+                    <div class="footerLRedes">
+                        <a href="https:www.facebook.com/QUINPRO-Carnes-y-más-100132708454710" target="_blank"><img src="./assets/imagenes/facebook-icono.png" alt="facebook-icono"> Quinpro </a> 
+                        <a href="https://wa.me/51922296876" target="_blank"><img src="./assets/imagenes/whatsapp-icono.png" alt="whatsapp-icono"> +51 922 296 876</a> 
+                        <a href="https:www.instagram.com/quinprocarnesymas" target="_blank"><img src="./assets/imagenes/logo-instagram.png" alt="logo-instagram"> @quinprocarnesymas</a> 
+                    </div>
+                </div>
+            </div>
+            <section class="copyright row">
+                <hr class="footerLinea">
                 <h4>&copy; Copyright 2022</h4>
             </section>
         </footer>

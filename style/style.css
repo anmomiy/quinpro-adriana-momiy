@@ -45,34 +45,15 @@ header{
 /*Footer*/
 footer{
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-}
-.flex-footer{
-    display: grid;
-    grid-template-areas:
-    "footerEnlaces footerFormulario footerRedes"
-    "footerLinea footerLinea footerLinea"
-    "copyright copyright copyright" 
-    ;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
 }
 .footerEnlaces, .footerFormulario, .footerRedes{
-    width: 100%;
-    margin-top: 2.5rem;
-    margin-bottom: 3rem;
     text-align: center;
+    margin: 0% 5% 2% 5%;
+    min-width: 200px;
+
 }
-.footerFormulario form{
-    display: flex;
-    flex-direction: column;
-}
-.footerFormulario form input{
-    max-width: 200px;
-    min-width: 80px;
-    align-self: center;
-}
+
 .footerLRedes {
     display: flex;
     flex-direction: column;
@@ -82,14 +63,13 @@ footer h4{
     color:white;
     font-size: 18px;
     text-decoration: underline;
-}
-.footerEnlaces{
-    grid-area: footerEnlaces;
+    margin-top: 5%;
 }
 .footerEnlaces ul{
     list-style: none;
     line-height: 200%;
     margin-top: 5%;
+    padding: 0%;
 }
 .footerEnlaces a{
     font-size: 16px;
@@ -98,39 +78,30 @@ footer h4{
 
 }
 /*Seccion Formulario footer*/
-.footerFormulario{
-    grid-area: footerFormulario;
+.footerFormulario input{
+    display: inline-block;
+    width: 200px;
 }
 .footerFormulario form{
     margin-top: 5%;
 }
 .footerFormulario label{
-    line-height: 200%;
     color:white;
 }
-.footerFormulario input{
-    font-size: 16px;
-    line-height: 150%;
-    margin-top: 2%;
-}
-.botonFormulario{
-    padding: 2%;
+.footerFormulario button{
+    width: 6vw;
+    align-self: center;
+    min-width: fit-content;
 }
 /*Seccion Redes footer*/
-.footerRedes{
-    grid-area: footerRedes;
-}
-.footerLRedes{
-    margin-top: 5%;
-}
-.footerRedes a{
+.footerLRedes a{
     text-decoration: none;
     color: white; 
     font-size: 16px;
     line-height: 200%;
-
+    margin-top: 3%;
 }
-.footerRedes img{
+.footerLRedes img{
     width: 40px;
     height: 40px;
 }
@@ -138,7 +109,6 @@ footer h4{
 .footerLinea{
     width:100%;
     border: 2px solid white;
-    grid-area: footerLinea;
     margin: 0%;
     opacity: 1;
 }
@@ -146,7 +116,7 @@ footer h4{
     width: 100%;
     text-align: center;
     height: 40px;
-    grid-area: copyright;
+    margin: 2% 0% 0%;
 }
 .lineaMainFoot{
     width: 100%;
@@ -219,18 +189,7 @@ main hr{
     border-radius: 5%;
 }
 /*Seccion tres Index */
-.indexSecTres{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-}
-.indexSecTres section{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-}
+
 .indexSecTres section div{
     flex-wrap: nowrap;
     flex-direction: column;
@@ -240,7 +199,9 @@ main hr{
 }
 .indexSecTres h4{
     text-align: center;
-    margin: 5%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .indexSecTres img{
     width: 150px;
@@ -253,29 +214,28 @@ main hr{
     margin-bottom: 5%;
 }
 /*Main Nosotros*/
-.flex-nosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flex-nosotros section{
+    margin-left: auto;
+    margin-right: auto;
 }
 .flex-nosotros h2{
     margin: 5%;
     align-self: flex-start;
-
+}
+.flex-nosotros h3{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-nosotros section{
+    margin-bottom: 5%;
 }
 .contenido-nosotros{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2%;
     border-style: double;
     border-color: black;
-}
-.contenido-nosotros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 1000px;
 }
 .contenido-nosotros img{
     border-radius: 25%;
@@ -283,11 +243,12 @@ main hr{
     width: 40%;
 }
 .contenido-nosotros p{
-    width: 40%;
+    width: 30%;
     background-color: blanchedalmond;
     margin: 5%;
     padding: 5%;
     line-height: 200%;
+    max-width: 500px;
 }
 /*Main Productos*/
 .flex-productos{
@@ -315,6 +276,7 @@ main hr{
 }
 .MenuLateral ul{
     list-style: none;
+    padding: 0%;
 }
 .MenuLateral li{
     border-style: solid;
@@ -509,17 +471,6 @@ main hr{
             margin-left: auto;
             margin-right: auto;
         }
-        /*Footer*/
-        .flex-footer{
-            display: grid;
-            grid-template-areas:
-            "footerEnlaces footerFormulario footerRedes"
-            "footerLinea footerLinea footerLinea"
-            "copyright copyright copyright" 
-            ;
-            grid-template-columns: 1fr 1.5fr 1.5fr;
-            justify-content: center;
-        }
         /*Carrusel*/
         .carousel{
             width: 80vw;
@@ -691,25 +642,6 @@ main hr{
         }
         .quinproLogo{
             width:auto;
-        }
-        /*Footer*/
-        .flex-footer{
-            display: grid;
-            grid-template-areas:
-            "footerEnlaces"
-            "footerFormulario"
-            "footerRedes"
-            "footerLinea"
-            "copyright"
-            ;
-            grid-template-columns: 100%;
-            text-align: center;
-        }
-        .flex-footer section{
-            width: 100%;
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
-
         }
         /*Carrusel*/
         .carousel{
