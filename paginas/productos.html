@@ -59,55 +59,148 @@
             </nav>
         </header>
         <hr class="lineaHeadMain">
-        <main class="flex-productos">
-            <section class="barraIzquierda">
-                <nav class="MenuLateral">
-                <a href="./productos.html" class="tituloProductos">Productos</a>
-                <!--Menu lateral-->
-                    <ul>
-                        <li><a href="./productos.html#ofertas">Ofertas</a></li>
-                        <li><a href="./productos.html#res">Carne de Res</a></li>
-                        <li><a href="./productos.html#cerdo">Carne de Cerdo</a></li>
-                        <li><a href="./productos.html#pollo">Pollo / Otros</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="prodContenido"> <!--Productos en orden alfabético-->
-                <div>
-                    <h3 id="ofertas">Ofertas del Mes</h3>
-                    <ol>
-                        <li>Oferta 1<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Oferta 2<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                    </ol>
-                </div>
-                <div>
-                    <h3 id="res">Carne de Res</h3>
-                    <ol>
-                        <li>Res 1<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Res 2<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Res 3<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Res 4<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Res 5<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Res 6<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                    </ol>
-                </div>
-                <div><h3 id="cerdo">Carne de Cerdo</h3>
-                    <ol>
-                        <li>Cerdo 1<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Cerdo 2<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Cerdo 3<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Cerdo 4<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                    </ol>
-                </div>
-                <div>
-                    <h3 id="pollo" >Pollo / Otros</h3>
-                    <ol>
-                        <li>Pollo 1<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Pollo 2<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                        <li>Pollo 3<img src="..//assets/imagenes/falta-imagen.jpg" alt="prueba"></li> <!--Cambiar img-->
-                    </ol>
-                </div>
-            </section>
+        <main class="flex-productos container-fluid">
+            <div class="row">
+                <section class="col-lg-3 barraIzquierda">
+                    <nav class="MenuLateral">
+                    <a href="./productos.html" class="tituloProductos">Productos</a>
+                    <!--Menu lateral-->
+                        <ul>
+                            <li><a href="./productos.html#ofertas">Ofertas</a></li>
+                            <li><a href="./productos.html#res">Carne de Res</a></li>
+                            <li><a href="./productos.html#cerdo">Carne de Cerdo</a></li>
+                            <li><a href="./productos.html#pollo">Pollo / Otros</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="col-lg-9 prodContenido"> <!--Productos en orden alfabético-->
+                    <div class="prodSeccion">
+                        <h3 id="ofertas">Ofertas del Mes</h3>
+                        <ol class="d-flex flex-wrap">
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                            <div class="card-body cuerpoCarta">
+                                <h4>Oferta 1</h4>  
+                                <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Oferta 2</h4>  
+                                <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                            </div>
+                        </li>
+                        </ol>
+                    </div>
+                    <div class="prodSeccion">
+                        <h3 id="res">Carne de Res</h3>
+                        <ol class="d-flex flex-wrap">
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body cuerpoCarta">
+                                    <h4>Res 1</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Res 2</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body cuerpoCarta">
+                                    <h4>Res 3</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Res 4</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body cuerpoCarta">
+                                    <h4>Res 5</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Res 6</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="prodSeccion">
+                        <h3 id="cerdo">Carne de Cerdo</h3>
+                        <ol class="d-flex flex-wrap">
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body cuerpoCarta">
+                                    <h4>Cerdo 1</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Cerdo 2</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Cerdo 3</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Cerdo 4</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="prodSeccion">
+                        <h3 id="pollo" >Pollo / Otros</h3>
+                        <ol class="d-flex flex-wrap">
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body cuerpoCarta">
+                                    <h4>Pollo 1</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Pollo 2</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                            <li class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..//assets/imagenes/falta-imagen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4>Pollo 2</h4>  
+                                    <p class="card-text">S/20.00 x kg. Oferta válida hasta agotar stock</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
 
         </main>
         <hr class="lineaMainFoot">

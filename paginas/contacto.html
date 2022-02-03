@@ -61,9 +61,9 @@
         <hr class="lineaHeadMain">
         <main class="flex-contactos">
             <h2>Contacto</h2>
-            <section class="contactoUno">
-                <a href="https://www.google.com/maps/place/Av.+Gral.+C%C3%B3rdova+985,+Miraflores+15074/@-12.1095729,-77.0487564,18z/data=!4m5!3m4!1s0x9105c837cae6cd4b:0xc0d68c50e261f062!8m2!3d-12.1100196!4d-77.0478232"><img src="..//assets/imagenes/mapa.JPG" alt="mapa"></a>
-                <div>
+            <section class="contactoUno d-flex flex-wrap justify-content-evenly">
+                <a class="mapa" href="https://www.google.com/maps/place/Av.+Gral.+C%C3%B3rdova+985,+Miraflores+15074/@-12.1095729,-77.0487564,18z/data=!4m5!3m4!1s0x9105c837cae6cd4b:0xc0d68c50e261f062!8m2!3d-12.1100196!4d-77.0478232"><img src="..//assets/imagenes/mapa.JPG" alt="mapa"></a>
+                <div  >
                     <h3>Dirección del local</h3>
                     <p>Av. Gral. Córdova 985, Miraflores, Lima, Perú</p>
                     <h3>Horario de Atención</h3>
@@ -78,35 +78,41 @@
             </section>
             <section class="formularioContacto">
                 <h3>Contáctanos</h3>
-                    <form>
-                        <fieldset>
-                            <div>
-                                <label for="cNombre">Nombre: </label>
-                                <input type="text" name="cNombre"/>
+                    <section class="border border-dark container-md cajaFormulario">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputName" class="form-label">Nombre: </label>
+                                <input type="text" class="form-control" id="inputName">
                             </div>
-                            <div>
-                                <label for="cApellido">Apellido: </label>
-                                <input type="text" name="cApellido"/>
+                            <div class="col-md-6">
+                                <label for="inputApellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="inputLastn">
                             </div>
-                            <div>
-                                <label for=cCelular>Celular: </label>
-                                <input type="text" name="cCelular"/>
-                            </div> 
-                            <div>
-                                <label for=cEmail>E-Mail: </label>
-                                <input type="email" name="cEmail"/>
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Correo: </label>
+                                <input type="email" class="form-control" id="inputEmail">
                             </div>
-                            <div>
-                                <label for="cComentario">Comentario: </label>
-                                <textarea name="comentarios" id="cComentario" cols="30" rows="10"></textarea> 
+                            <div class="col-md-6">
+                                <label for="inputMobile" class="form-label">Celular: </label>
+                                <input type="text" class="form-control" id="inputMobile">
                             </div>
-                            <div>
-                                <input type="checkbox" name="aceptar" value="1"/> 
-                                <label for="aceptar">Deseo recibir el catálogo mensual</label>
+                            <div class="col-12">
+                                <label for="comentario" class="form-label">Comentario: </label>
+                                <textarea class="form-control" id="comentario" rows="3"></textarea>
                             </div>
-                            <input type="submit" value="Enviar" class="botonFormulario"/>
-                        </fieldset>
-                    </form>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                    Deseo recibir el catálogo mensual.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                            </div>
+                        </form>
+                    </section>
             </section>
         </main>
         <hr class="lineaMainFoot">

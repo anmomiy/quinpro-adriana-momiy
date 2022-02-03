@@ -59,8 +59,9 @@
             </nav>
         </header>
         <hr class="lineaHeadMain">
-        <main class="flex-faq">
-            <section class="barraIzquierda">
+        <main class="flex-faq container-fluid">
+            <div class="row">
+               <section class="col-lg-3 barraIzquierda">
                 <nav class="MenuLateral">
                     <a href="./faq.html" class="tituloFaq">FAQ</a>
                     <ul>
@@ -71,7 +72,7 @@
                     </ul>
                 </nav>
             </section>
-            <section class="faqPrincipal"> <!--Uso de acordeones para mostrar/ocultar respuestas a las preguntas-->
+            <section class="col-lg-9 faqPrincipal"> <!--Uso de acordeones para mostrar/ocultar respuestas a las preguntas-->
                 <h3 id="snosotros">Sobre Nosotros</h3>
                 <div class="accordion">
                     <ul class="accordionWrapper">
@@ -187,8 +188,11 @@
                             </div> 
                         </li> 
                     </ul> 
-                </div> 
+                </div>  
             </section>
+            </div>
+            
+            
         </main>
         <hr class="lineaMainFoot">
         <footer class="flex-footer">
