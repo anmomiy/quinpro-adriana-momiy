@@ -399,14 +399,12 @@ main hr{
 }
 .mapa{
     width: 40%;
-    min-width: 500px;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 .contactoUno div{
     padding: 2%;
     width: 40%;
-    min-width: 500px;
     background-color: blanchedalmond;
     border-radius: 15%;
     margin-top: 2%;
@@ -440,15 +438,12 @@ main hr{
 }
 /* Responsive */
     /* Tablet */
-    @media (min-width: 481px) and (max-width: 1023px){
+    @media (min-width: 481px) and (max-width: 992px){
         /*Header*/
         .flex-header{
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-end;
-        }
-        .navbar{
-            width: 172px;
         }
         .quinproLogo{
             margin-left: auto;
@@ -491,13 +486,14 @@ main hr{
         }
         .contenido-nosotros img{
             width: 50%;
-            min-width: 300px;
-            max-width: 350px;
+            min-width: 400px;
+            max-width: 450px;
         }
         .contenido-nosotros p{
             width: 50%;
-            min-width: 300px;
-            max-width: 350px;
+            min-width: 400px;
+            max-width: 450px;
+            margin-top: 5%;
         }
         /*Productos*/
         .flex-productos{
@@ -573,11 +569,6 @@ main hr{
             width: 60%;
         }
         /*Main Contactos*/
-        /*.contactoUno{
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-        }*/
         .contactoUno{
             width: 100%;
         }
@@ -649,21 +640,8 @@ main hr{
             margin-right: 5%;
         }
         /*Nosotros*/
-        .contenido-nosotros{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 80%;
-            justify-content: center;
-            align-content: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .contenido-nosotros img{
-            width: 80%;
-        }
         .contenido-nosotros p{
-            width: 80%;
+            margin-top: 5%;
         }
         /*Productos*/
         .flex-productos{
