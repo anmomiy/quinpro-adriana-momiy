@@ -1,0 +1,37 @@
+@import '..//utilities/variables';
+/*Main Productos*/
+.tituloProductos{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+.prodContenido{
+    width: 75%;
+    .prodSeccion{
+    background-color: $p-bg;
+    margin: 5%;
+    padding: 2%;
+    }
+    ol{
+        padding:0%;
+        li{
+            margin: 2% auto;
+            background-color: $adicional;
+            border-radius: 5%;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    h4{
+        font-weight: 700;
+        color: $dark;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    img{
+        display: block;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
+}
+

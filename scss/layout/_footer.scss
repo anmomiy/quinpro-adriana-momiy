@@ -1,0 +1,82 @@
+@import '..//utilities/variables';
+/*Footer*/
+footer{
+    background-color: $dark;
+    width: 100%;
+    .row{
+        margin: 0;
+    }
+}
+/*Seccion Enlaces*/
+.footerEnlaces{
+    text-align: center;
+    margin: 0% 5% 2% 5%;
+    min-width: 200px;
+    ul{
+        list-style: none;
+        line-height: 200%;
+        margin-top: 5%;
+        padding: 0%;
+    }
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        color: $light;
+    
+    }
+}
+/*Seccion Formulario*/
+.footerFormulario{
+    text-align: center;
+    margin: 0% 5% 2% 5%;
+    min-width: 200px;
+    input{
+        display: inline-block;
+        width: 200px;
+    }
+    form{
+        margin-top: 5%;
+    }
+    label{
+        color:$light;
+    }
+    button{
+        width: 6vw;
+        align-self: center;
+        min-width: fit-content;
+    }
+}
+/*Seccion Redes*/
+.footerRedes{
+    text-align: center;
+    margin: 0% 5% 2% 5%;
+    min-width: 200px;
+    .footerLRedes {
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            color: $light; 
+            font-size: 16px;
+            line-height: 200%;
+            margin-top: 3%;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+/*Copyright*/
+.footerLinea{
+    width:100%;
+    border: 2px solid $light;
+    margin: 0%;
+    opacity: 1;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    margin: 2% 0% 0%;
+}

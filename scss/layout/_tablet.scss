@@ -1,0 +1,148 @@
+@import '..//utilities/variables';
+/* Tablet */
+@media (min-width: 481px) and (max-width: 992px){
+    /*Header*/
+    .flex-header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .quinproLogo{
+        margin: $centrar;
+    }
+    /*Carrusel*/
+    .carrusel{
+        .carousel{
+            width: 80vw;
+        }
+    }
+    /*Seccion dos Index */
+    .indexSecDos{
+        div{
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: center;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+        }
+        p{
+            margin-top: 2%;
+            width: 350px;
+        }
+    } 
+    /*Seccion tres Index */
+    .indexSecTres{
+        h4{
+            max-width: 250px;
+        }
+        section{
+            div{
+                margin: 0 0% 2% 0%;
+            }
+            section{
+                margin: $centrar;
+            } 
+        } 
+    }
+    /*Nosotros*/
+    .contenido-nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 1000px;
+        justify-content: center;
+        align-content: center;
+        img{
+            width: 50%;
+            min-width: 300px;
+            max-width: 350px;
+        }
+        p{
+            width: 50%;
+            min-width: 300px;
+            max-width: 350px;
+        }
+    }
+    /*Productos*/
+    .flex-productos{
+        display: grid;
+        grid-template-areas: 
+        "barraIzquierda"
+        "prodContenido";
+        grid-template-columns: 100%;
+    }
+    .barraIzquierda{
+        position:sticky;
+        top:0px;
+    }
+    /* Barra lateral*/
+    .MenuLateral{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        height: auto;
+        a{
+            text-align: center;
+            line-height: 200%;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0%;
+            li{
+                border-style: none;
+                margin: 1%;
+                padding: 2%;
+                a{
+                    line-height: normal;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+    /*Contenido Productos*/
+    .tituloFaq, .tituloProductos{
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: 700;
+        align-self: center;
+    }
+    #ofertas, #res, #pollo, #cerdo{
+        scroll-margin-top: 100px;
+    }
+    .prodContenido{
+        width: 100%;
+    }
+    /*FAQ*/
+    .flex-faq{
+        flex-direction: column;
+    }
+    .faqPrincipal{
+        width: 100%;
+    }
+    #sentrega, #sproductos, #snosotros, #otros{
+        scroll-margin-top: 100px;
+    }    
+    .accordionWrapper {
+        margin: $centrar;
+        width: 90%;
+    }
+    /*Main Contactos*/
+    .contactoUno{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        iframe{
+            width: 450px;
+        }
+        div{
+            width: 450px;
+        }
+    }
+}

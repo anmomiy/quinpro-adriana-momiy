@@ -1,0 +1,35 @@
+@import '..//utilities/variables';
+/*Nosotros*/
+.flex-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin: 5%;
+        align-self: flex-start;
+    }
+}
+.contenido-nosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+    margin: $centrar;
+    margin-bottom: 4%;
+    border-style: double;
+    border-color: $dark;
+    img{
+        border-radius: 25%;
+        margin: 5%;
+        width: 40%;
+    }
+    p{
+        width: 40%;
+        background-color: $p-bg;
+        margin: 5%;
+        padding: 5%;
+        line-height: 200%;
+        border-radius: 25%;
+    }
+}
