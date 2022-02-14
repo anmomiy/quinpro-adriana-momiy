@@ -1,4 +1,5 @@
 @import '..//utilities/variables';
+@import '..//utilities/mixin';
 /* Tablet */
 @media (min-width: 481px) and (max-width: 992px){
     /*Header*/
@@ -49,9 +50,7 @@
     }
     /*Nosotros*/
     .contenido-nosotros{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex-fila-wrap;
         width: 90%;
         max-width: 1000px;
         justify-content: center;
@@ -81,9 +80,7 @@
     }
     /* Barra lateral*/
     .MenuLateral{ 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex-fila-wrap;
         justify-content: space-around;
         max-width: 100%;
         height: auto;

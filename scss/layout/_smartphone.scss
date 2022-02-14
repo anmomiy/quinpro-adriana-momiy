@@ -1,6 +1,7 @@
 @import '..//utilities/variables';
+@import '..//utilities/mixin';
 /* Mobile */
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     /*Header*/
     .flex-header{
         display: flex;
@@ -21,9 +22,8 @@
     }
     /*Seccion dos Index */
     .indexSecDos{
-        div{
-            display: flex;
-            flex-direction: column;
+        .contSecDos{
+            @include flex-fila-wrap;
             width: 80%;
         }
         img{
@@ -42,10 +42,7 @@
     }
     /*Nosotros*/
     .contenido-nosotros{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 80%;
+        @include flex-fila-wrap;
         justify-content: center;
         align-content: center;
         img{
@@ -87,9 +84,7 @@
             line-height: 250%;
         }
         ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flex-fila-wrap;
             justify-content: center;
             margin-bottom: 0%;
             li{
@@ -137,9 +132,7 @@
     } 
      /*Main Contactos*/
      .contactoUno{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        @include flex-columna;
         align-content: center;
         iframe{
             width: 90vw;

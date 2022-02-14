@@ -22,9 +22,6 @@ h4 {
   text-decoration: underline;
   margin-top: 5%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /* Header */
 header {
   background-color: black; }
@@ -39,16 +36,10 @@ header {
   min-width: 150px;
   margin: 1% 1%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Barra Menu*/
 .dropdown-item:hover {
   background-color: #666666; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Footer*/
 footer {
   background-color: black;
@@ -119,9 +110,6 @@ footer {
   height: 40px;
   margin: 2% 0% 0%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /* Funciona para Productos y FAQ*/
 .barraIzquierda {
   background-color: black;
@@ -151,9 +139,6 @@ footer {
     text-transform: uppercase;
     text-align: center; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Carrusel*/
 .carrusel {
   width: 100%;
@@ -166,11 +151,10 @@ footer {
 /*Index Seccion 2*/
 .indexSecDos {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   width: 100%;
   align-items: center; }
-  .indexSecDos div {
+  .indexSecDos .contSecDos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -215,9 +199,6 @@ footer {
     height: 150px;
     border-radius: 10%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Nosotros*/
 .flex-nosotros {
   display: flex;
@@ -249,11 +230,8 @@ footer {
     line-height: 200%;
     border-radius: 25%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Main Productos*/
-.tituloProductos {
+.tituloProductos, .tituloFaq {
   font-size: 1.5rem;
   font-weight: 700;
   display: block; }
@@ -264,31 +242,31 @@ footer {
     background-color: rgba(255, 225, 205, 0.959);
     margin: 5%;
     padding: 2%; }
-  .prodContenido ol {
-    padding: 0%; }
-    .prodContenido ol li {
-      margin: 2% auto;
-      background-color: #ffbe93;
-      border-radius: 5%;
-      font-size: 18px;
-      text-align: center; }
-  .prodContenido h4 {
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
-    font-size: 20px; }
-  .prodContenido img {
-    display: block;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%; }
-
-/*Variables*/
-/*Color*/
-/*Margin*/
-.tituloFaq {
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: block; }
+    .prodContenido .prodSeccion ol {
+      padding: 0%; }
+      .prodContenido .prodSeccion ol li {
+        margin: 2% auto;
+        background-color: #ffbe93;
+        border-radius: 5%;
+        font-size: 18px;
+        text-align: center; }
+    .prodContenido .prodSeccion h4 {
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      font-size: 20px; }
+    .prodContenido .prodSeccion img {
+      display: block;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%; }
+    .prodContenido .prodSeccion .prod-ofertas {
+      color: #b6ac29; }
+    .prodContenido .prodSeccion .prod-res {
+      color: #ca090991; }
+    .prodContenido .prodSeccion .prod-cerdo {
+      color: #ce6d7d; }
+    .prodContenido .prodSeccion .prod-pollo {
+      color: #b98930; }
 
 .flex-faq {
   z-index: 10; }
@@ -352,9 +330,6 @@ footer {
         .accordion .accordionWrapper .accordionItem input[type=checkbox]:checked ~ span {
           transform: rotate(180deg); }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /*Main Contactos*/
 .flex-contactos {
   display: flex;
@@ -399,9 +374,6 @@ footer {
   margin-bottom: 5%;
   padding: 2%; }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /* Tablet */
 @media (min-width: 481px) and (max-width: 992px) {
   /*Header*/
@@ -481,7 +453,7 @@ footer {
           line-height: normal;
           font-size: 0.95rem; }
   /*Contenido Productos*/
-  .tituloFaq, .tituloProductos {
+  .tituloFaq, .tituloProductos, .tituloFaq {
     font-size: 1.1rem;
     text-align: center;
     font-weight: 700;
@@ -510,11 +482,8 @@ footer {
     .contactoUno div {
       width: 450px; } }
 
-/*Variables*/
-/*Color*/
-/*Margin*/
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   /*Header*/
   .flex-header {
     display: flex;
@@ -528,9 +497,10 @@ footer {
   .carrusel .carousel {
     width: 100%; }
   /*Seccion dos Index */
-  .indexSecDos div {
+  .indexSecDos .contSecDos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 80%; }
   .indexSecDos img {
     width: 90%;
@@ -547,7 +517,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
     justify-content: center;
     align-content: center; }
     .contenido-nosotros img {
@@ -560,7 +529,7 @@ footer {
     grid-template-areas: "barraIzquierda" "prodContenido";
     grid-template-columns: 100%; }
   /*Barra Lateral*/
-  .tituloFaq, .tituloProductos {
+  .tituloFaq, .tituloProductos, .tituloFaq {
     font-size: 16px;
     text-align: center;
     font-weight: 700;
@@ -617,7 +586,6 @@ footer {
   .contactoUno {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: center; }
     .contactoUno iframe {
       width: 90vw; }

@@ -1,8 +1,8 @@
 @import '..//utilities/variables';
+@import '..//utilities/mixin';
 /*Nosotros*/
 .flex-nosotros{
-    display: flex;
-    flex-direction: column;
+    @include flex-columna;
     align-items: center;
     h2{
         margin: 5%;
@@ -10,9 +10,7 @@
     }
 }
 .contenido-nosotros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex-fila-wrap;
     width: 90%;
     max-width: 1000px;
     margin: $centrar;

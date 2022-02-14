@@ -1,4 +1,5 @@
 @import '..//utilities/variables';
+@import '..//utilities/mixin';
 /*Footer*/
 footer{
     background-color: $dark;
@@ -52,8 +53,7 @@ footer{
     margin: 0% 5% 2% 5%;
     min-width: 200px;
     .footerLRedes {
-        display: flex;
-        flex-direction: column;
+        @include flex-columna;
         a{
             text-decoration: none;
             color: $light; 
