@@ -501,6 +501,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%; }
   .indexSecDos img {
     width: 90%;
@@ -509,7 +510,7 @@ footer {
     width: 80%;
     line-height: 200%;
     margin-top: 5%;
-    font-size: 12px; }
+    font-size: 14px; }
   /*Seccion tres Index */
   .indexSecTres section section {
     margin: 0 auto; }
@@ -521,9 +522,10 @@ footer {
     justify-content: center;
     align-content: center; }
     .contenido-nosotros img {
-      width: 80%; }
+      width: 90%; }
     .contenido-nosotros p {
-      width: 80%; }
+      width: 90%;
+      font-size: 14px; }
   /*Productos*/
   .flex-productos {
     display: grid;

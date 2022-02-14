@@ -24,6 +24,7 @@
     .indexSecDos{
         .contSecDos{
             @include flex-fila-wrap;
+            justify-content: center;
             width: 80%;
         }
         img{
@@ -34,7 +35,7 @@
             width: 80%;
             line-height: 200%;
             margin-top: 5%;
-            font-size: 12px;
+            font-size: 14px;
         }
     } 
     /*Seccion tres Index */
@@ -47,10 +48,11 @@
         justify-content: center;
         align-content: center;
         img{
-            width: 80%;
+            width: 90%;
         }
         p{
-            width: 80%;
+            width: 90%;
+            font-size: 14px;
         }
     }
     /*Productos*/
