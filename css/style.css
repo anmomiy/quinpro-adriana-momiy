@@ -387,7 +387,7 @@ footer {
   .carrusel .carousel {
     width: 80vw; }
   /*Seccion dos Index */
-  .indexSecDos div {
+  .indexSecDos .contSecDos {
     flex-wrap: wrap;
     width: 80%;
     justify-content: center; }
@@ -508,7 +508,8 @@ footer {
   .indexSecDos p {
     width: 80%;
     line-height: 200%;
-    margin-top: 5%; }
+    margin-top: 5%;
+    font-size: 12px; }
   /*Seccion tres Index */
   .indexSecTres section section {
     margin: 0 auto; }
