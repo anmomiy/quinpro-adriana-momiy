@@ -11,27 +11,25 @@
     .quinproLogo{
         margin: $centrar;
     }
+    h1{
+        font-size: 20px;
+    }
     /*Carrusel*/
     .carrusel{
         .carousel{
-            width: 80vw;
+            width: 90%;
         }
     }
     /*Seccion dos Index */
     .indexSecDos{
         .contSecDos{
             flex-wrap: wrap;
-            width: 80%;
+            width: 480px;
             justify-content: center;
-        }
-        img{
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
         }
         p{
             margin-top: 2%;
-            width: 350px;
+            width: 400px;
         }
     } 
     /*Seccion tres Index */
@@ -55,15 +53,10 @@
         max-width: 1000px;
         justify-content: center;
         align-content: center;
-        img{
-            width: 50%;
-            min-width: 300px;
-            max-width: 350px;
-        }
         p{
-            width: 50%;
-            min-width: 300px;
-            max-width: 350px;
+            margin-top: 5%;
+            width: 400px;
+            height: 400px;
         }
     }
     /*Productos*/

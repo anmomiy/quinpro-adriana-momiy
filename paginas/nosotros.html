@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="description" content="Quinpro es una empresa dedicada a la comercialización de carne de res, cerdo y pollo, bajo los más altos estándares de calidad">
         <meta name="keywords" content="historia quinpro, tipo de cortes quinpro, carne quinpro">
         <link rel="shortcut icon" href="..//assets/imagenes/favicon.png">
@@ -13,7 +13,14 @@
     <body>
         <header class="flex-header">
             <div class="quinproLogo">
-                <a href=..//index.html ><img src="..//assets/imagenes/logo-quinpro.JPG" alt="logo-quinpro" class="quinproLogo"></a>
+                <a href=..//index.html >                    
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="..//assets/imagenes/logo-quinpro-180x51.JPG">
+                        <source media="(max-width: 922px)" srcset="..//assets/imagenes/logo-quinpro-250x71.JPG">
+                        <source media="(min-width: 923px)" srcset="..//assets/imagenes/logo-quinpro-320x91.JPG">
+                        <img src="..//assets/imagenes/logo-quinpro.JPG" alt="logo">
+                    </picture>
+                </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
                 <div class="container-fluid">
@@ -63,14 +70,22 @@
             <section> 
                 <h3>¿Quiénes somos?</h3><br>
                 <div class="contenido-nosotros">
-                    <img src="..//assets/imagenes/quienes-somos.jpg" alt="quienes-somos">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="..//assets/imagenes/quienes-somos-300x300.JPG">
+                        <source media="(min-width: 481px)" srcset="..//assets/imagenes/quienes-somos-400x400.JPG">
+                        <img src="..//assets/imagenes/quienes-somos-original.JPG" alt="logo">
+                    </picture>
                     <p class="shadow-drop-2-br">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos, a reprehenderit blanditiis vitae alias praesentium ipsum doloremque fuga, nobis voluptates doloribus dolorum rem unde distinctio deserunt delectus, error non.</p>
                 </div>
             </section>
             <section>
                 <h3>Nuestros Productos</h3><br>
                 <div class="contenido-nosotros">
-                    <img src="..//assets/imagenes/nuestros-productos.jpg" alt="nuestros-productos">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="..//assets/imagenes/nuestros-productos-300x300.JPG">
+                        <source media="(min-width: 481px)" srcset="..//assets/imagenes/nuestros-productos-400x400.JPG">
+                        <img src="..//assets/imagenes/nuestros-productos-original.JPG" alt="logo">
+                    </picture>
                     <p class="shadow-drop-2-br">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos, a reprehenderit blanditiis vitae alias praesentium ipsum doloremque fuga, nobis voluptates doloribus dolorum rem unde distinctio deserunt delectus, error non.</p>
                 </div>
             </section>

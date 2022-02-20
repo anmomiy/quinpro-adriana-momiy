@@ -6,7 +6,7 @@
     background-color: $dark;
     height: fit-content;
     .carousel{
-    width:65vw;
+    width:900px;
     margin:$centrar;
     }
 }
@@ -28,8 +28,6 @@
         border-color: $dark;
     }
     img{
-        width: 48%;
-        height: 400px;
         border-radius: 50%;
     }
     p{
@@ -39,8 +37,9 @@
         text-align:left;
         font-weight: 700;
         background-color: $p-bg;
-        padding: 2%;
-        border-radius: 5%;
+        padding: 5%;
+        border-radius: 15%;
+        margin-bottom: 0;
     }
 }
 /*Index Seccion 3*/

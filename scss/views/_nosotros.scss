@@ -11,22 +11,23 @@
 }
 .contenido-nosotros{
     @include flex-fila-wrap;
-    width: 90%;
-    max-width: 1000px;
+    width: 900px;
+    justify-content: space-around;
+    align-content: center;
     margin: $centrar;
     margin-bottom: 4%;
     border-style: double;
     border-color: $dark;
+    padding: 3%;
     img{
         border-radius: 25%;
-        margin: 5%;
-        width: 40%;
+        margin-right: 5%;
     }
     p{
-        width: 40%;
+        width: 400px;
+        height: 400px;
         background-color: $p-bg;
-        margin: 5%;
-        padding: 5%;
+        padding: 8%;
         line-height: 200%;
         border-radius: 25%;
     }

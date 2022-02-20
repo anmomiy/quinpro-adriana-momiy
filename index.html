@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="description" content="Tienda virtual de carne de res, cerdo y pollo, para todo Lima metropolitana">
         <meta name="keywords" content="Quinpro, tienda de carne, comprar carne, carne para parrilla, venta de carne en Peru">
         <link rel="shortcut icon" href="./assets/imagenes/favicon.png">
@@ -13,7 +13,14 @@
     <body>
         <header class="flex-header">
             <div class="quinproLogo">
-                <a href=./index.html ><img src="./assets/imagenes/logo-quinpro.JPG" alt="logo-quinpro" class="quinproLogo"></a>
+                <a href=./index.html>
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="./assets/imagenes/logo-quinpro-180x51.JPG">
+                        <source media="(max-width: 922px)" srcset="./assets/imagenes/logo-quinpro-250x71.JPG">
+                        <source media="(min-width: 923px)" srcset="./assets/imagenes/logo-quinpro-320x91.JPG">
+                        <img src="./assets/imagenes/logo-quinpro.JPG" alt="logo">
+                    </picture>
+                </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
                 <div class="container-fluid">
@@ -63,13 +70,28 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/imagenes/carrusel-1.JPG" class="d-block w-100" alt="...">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./assets/imagenes/carrusel-1-350x200.JPG">
+                            <source media="(max-width: 922px)" srcset="./assets/imagenes/carrusel-1-700x400.JPG">
+                            <source media="(min-width: 923px)" srcset="./assets/imagenes/carrusel-1-900x600.JPG">
+                            <img src="./assets/imagenes/carrusel-1-original.JPG" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/imagenes/carrusel-2.jpg" class="d-block w-100" alt="...">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./assets/imagenes/carrusel-2-350x200.JPG">
+                            <source media="(max-width: 922px)" srcset="./assets/imagenes/carrusel-2-700x400.JPG">
+                            <source media="(min-width: 923px)" srcset="./assets/imagenes/carrusel-2-900x600.JPG">
+                            <img src="./assets/imagenes/carrusel-2-original.JPG" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/imagenes/carrusel-3.jpg" class="d-block w-100" alt="...">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./assets/imagenes/carrusel-3-350x200.JPG">
+                            <source media="(max-width: 922px)" srcset="./assets/imagenes/carrusel-3-700x400.JPG">
+                            <source media="(min-width: 923px)" srcset="./assets/imagenes/carrusel-3-900x600.JPG">
+                            <img src="./assets/imagenes/carrusel-3-original.JPG" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -85,7 +107,11 @@
             <section class="indexSecDos">
                 <h3>Quinpro, tu mejor opción en carnes</h3>
                 <div class="contSecDos">
-                    <img src="./assets/imagenes/index-img.JPG" alt="imagen-seccion-dos">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="./assets/imagenes/index-img-300x300.JPG">
+                        <source media="(min-width: 481px)" srcset="./assets/imagenes/index-img-400x400.JPG">
+                        <img src="./assets/imagenes/index-img-original.JPG" alt="imagen-seccion-dos">
+                    </picture>
                     <p class="shadow-drop-2-br">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates libero dignissimos blanditiis ipsum suscipit? Consequuntur blanditiis pariatur suscipit distinctio. Veritatis nulla veniam praesentium harum maxime aut eius voluptatem sint deserunt?</p>
                 </div>
             </section>
@@ -94,15 +120,15 @@
                 <section class="row">
                     <div class="col-md-4">
                         <h4>No se requiere un monto mínimo de compra</h4>
-                        <img src="./assets/imagenes/minimo-compra.JPG" alt="minimo-compra" class="rotate-vert-center">
+                        <img src="./assets/imagenes/minimo-compra-min.JPG" alt="minimo-compra" class="rotate-vert-center">
                     </div>
                     <div class="col-md-4">
                         <h4>Costo adicional por delivery</h4>
-                        <img src="./assets/imagenes/delivery.JPG" alt="costo-delivery" class="rotate-vert-center">
+                        <img src="./assets/imagenes/delivery-min.JPG" alt="costo-delivery" class="rotate-vert-center">
                     </div>
                     <div class="col-md-4">
                         <h4>Despacho de lunes a sábado</h4>
-                        <img src="./assets/imagenes/fechas-entrega.JPG" alt="fechas-entrega" class="rotate-vert-center">
+                        <img src="./assets/imagenes/fechas-entrega-min.JPG" alt="fechas-entrega" class="rotate-vert-center">
                     </div>
                 </section>
             </section>  
