@@ -181,8 +181,8 @@ footer {
     text-align: left;
     font-weight: 700;
     background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
-    font-size: 16px;
-    padding: 8%;
+    font-size: 17px;
+    padding: 5%;
     border-radius: 15%;
     margin-bottom: 0; }
 
@@ -209,8 +209,7 @@ footer {
 /*Nosotros*/
 .flex-nosotros {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .flex-nosotros h2 {
     margin: 5%;
     align-self: flex-start; }
@@ -218,15 +217,14 @@ footer {
 .contenido-nosotros {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 900px;
+  width: 950px;
   justify-content: space-around;
   align-content: center;
   margin: 0 auto;
   margin-bottom: 4%;
   border-style: double;
   border-color: black;
-  padding: 3%; }
+  padding: 2%; }
   .contenido-nosotros img {
     border-radius: 25%;
     margin-right: 5%; }
@@ -235,8 +233,9 @@ footer {
     height: 400px;
     background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
     padding: 8%;
-    line-height: 200%;
-    border-radius: 25%; }
+    line-height: 250%;
+    border-radius: 25%;
+    font-weight: 600; }
 
 /*Main Productos*/
 .tituloProductos, .tituloFaq {
@@ -254,11 +253,12 @@ footer {
       padding: 0%; }
       .prodContenido .prodSeccion ol li {
         margin: 2% auto;
-        background-color: #fdd1b4;
+        background-color: #fbdece;
         border: none;
         border-radius: 5%;
         font-size: 16px;
-        text-align: center; }
+        text-align: center;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); }
     .prodContenido .prodSeccion h4 {
       font-weight: 700;
       color: black;
@@ -295,13 +295,14 @@ footer {
       padding-top: 1.5rem;
       position: relative;
       width: 100%;
-      background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
+      background-color: #fbdece;
       border-bottom: 1px solid rgba(255, 255, 255, 0.966);
       margin-bottom: 1px;
       padding-bottom: 0.5rem; }
       .accordion .accordionWrapper .accordionItem h4 {
         font-size: 20px;
         font-weight: 600;
+        text-decoration: none;
         color: black;
         margin: auto; }
       .accordion .accordionWrapper .accordionItem p {
@@ -405,7 +406,9 @@ footer {
     justify-content: center; }
   .indexSecDos p {
     margin-top: 2%;
-    width: 400px; }
+    width: 400px;
+    max-height: 400px;
+    padding: 10%; }
   /*Seccion tres Index */
   .indexSecTres h4 {
     max-width: 250px; }
@@ -418,22 +421,20 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    max-width: 1000px;
+    width: min-content;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    padding: 5%; }
     .contenido-nosotros p {
       margin-top: 5%;
       width: 400px;
-      height: 400px; }
+      height: 400px;
+      padding: 12%; }
   /*Productos*/
   .flex-productos {
     display: grid;
     grid-template-areas: "barraIzquierda" "prodContenido";
     grid-template-columns: 100%; }
-  .barraIzquierda {
-    position: sticky;
-    top: 0px; }
   /* Barra lateral*/
   .MenuLateral {
     display: none; }
@@ -457,6 +458,10 @@ footer {
   .accordionWrapper {
     margin: 0 auto;
     width: 90%; }
+    .accordionWrapper .accordionItem h4 {
+      font-size: 16px; }
+    .accordionWrapper .accordionItem p {
+      font-size: 14px; }
   /*Main Contactos*/
   .contactoUno {
     flex-direction: column;
@@ -492,12 +497,15 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: min-content; }
+    width: min-content;
+    padding: 5%; }
   .indexSecDos p {
     width: 300px;
     line-height: 200%;
     margin-top: 5%;
-    font-size: 14px; }
+    font-size: 16px;
+    height: 300px;
+    padding: 15%; }
   /*Seccion tres Index */
   .indexSecTres section section {
     margin: 0 auto; }
@@ -505,14 +513,16 @@ footer {
   .contenido-nosotros {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: min-content;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    padding: 5%; }
     .contenido-nosotros p {
       width: 300px;
       height: 300px;
       margin-top: 5%;
-      font-size: 14px; }
+      font-size: 14px;
+      padding: 10%; }
   /*Productos*/
   .flex-productos {
     display: grid;
@@ -547,10 +557,10 @@ footer {
   .accordionWrapper {
     margin: 0 auto;
     width: 60%; }
-  .accordionItem h4 {
-    font-size: 16px; }
-  .accordionItem p {
-    font-size: 14px; }
+    .accordionWrapper .accordionItem h4 {
+      font-size: 15px; }
+    .accordionWrapper .accordionItem p {
+      font-size: 13px; }
   /*Main Contactos*/
   .contactoUno {
     display: flex;

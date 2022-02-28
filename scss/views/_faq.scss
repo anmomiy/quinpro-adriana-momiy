@@ -29,13 +29,14 @@
             padding-top: 1.5rem;
             position: relative;
             width: 100%;
-            background: $p-bg;
+            background-color: $adicional;
             border-bottom: 1px solid $light;
             margin-bottom: 1px;
             padding-bottom: 0.5rem;
             h4{
                 font-size: 20px;
                 font-weight: 600;
+                text-decoration: none;
                 color: $dark;
                 margin: auto;
             }

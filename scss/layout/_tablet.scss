@@ -40,6 +40,8 @@
         p{
             margin-top: 2%;
             width: 400px;
+            max-height: 400px;
+            padding: 10%;
         }
     } 
     /*Seccion tres Index */
@@ -59,14 +61,15 @@
     /*Nosotros*/
     .contenido-nosotros{
         @include flex-fila-wrap;
-        width: 90%;
-        max-width: 1000px;
+        width: min-content;
         justify-content: center;
         align-content: center;
+        padding: 5%;
         p{
             margin-top: 5%;
             width: 400px;
             height: 400px;
+            padding: 12%;
         }
     }
     /*Productos*/
@@ -76,10 +79,6 @@
         "barraIzquierda"
         "prodContenido";
         grid-template-columns: 100%;
-    }
-    .barraIzquierda{
-        position:sticky;
-        top:0px;
     }
     /* Barra lateral*/
     .MenuLateral{ 
@@ -111,6 +110,14 @@
     .accordionWrapper {
         margin: $centrar;
         width: 90%;
+        .accordionItem{
+            h4{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
     }
     /*Main Contactos*/
     .contactoUno{

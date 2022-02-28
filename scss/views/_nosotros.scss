@@ -3,22 +3,22 @@
 /*Nosotros*/
 .flex-nosotros{
     @include flex-columna;
-    align-items: center;
     h2{
         margin: 5%;
         align-self: flex-start;
     }
 }
 .contenido-nosotros{
-    @include flex-fila-wrap;
-    width: 900px;
+    display: flex;
+    flex-direction: row;
+    width: 950px;
     justify-content: space-around;
     align-content: center;
     margin: $centrar;
     margin-bottom: 4%;
     border-style: double;
     border-color: $dark;
-    padding: 3%;
+    padding: 2%;
     img{
         border-radius: 25%;
         margin-right: 5%;
@@ -28,7 +28,8 @@
         height: 400px;
         background: $p-bg;
         padding: 8%;
-        line-height: 200%;
+        line-height: 250%;
         border-radius: 25%;
+        font-weight: 600;
     }
 }

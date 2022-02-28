@@ -32,12 +32,15 @@
             @include flex-fila-wrap;
             justify-content: center;
             width: min-content;
+            padding: 5%;
         }
         p{
             width: 300px;
             line-height: 200%;
             margin-top: 5%;
-            font-size: 14px;
+            font-size: 16px;
+            height: 300px;
+            padding: 15%;
         }
     } 
     /*Seccion tres Index */
@@ -47,14 +50,16 @@
     /*Nosotros*/
     .contenido-nosotros{
         @include flex-columna;
-        width: 95vw;
+        width: min-content;
         justify-content: center;
         align-content: center;
+        padding: 5%;
         p{
             width: 300px;
             height: 300px;
             margin-top: 5%;
             font-size: 14px;
+            padding: 10%;
         }
     }
     /*Productos*/
@@ -102,16 +107,16 @@
     .accordionWrapper {
         margin: $centrar;
         width: 60%;
-        
+        .accordionItem{
+            h4{
+            font-size: 15px;
+            }
+            p{
+                font-size: 13px;
+            }
+        } 
     }
-    .accordionItem{
-        h4{
-        font-size: 16px;
-        }
-        p{
-            font-size: 14px;
-        }
-    } 
+
      /*Main Contactos*/
      .contactoUno{
         @include flex-columna;
