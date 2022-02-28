@@ -6,10 +6,20 @@
     .flex-header{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
+        position:sticky;
+        top: 0;
+        z-index: 15;
+        justify-self: flex-end;
+    }
+    .navbar{
+        width: 30%;
+        z-index: 18;
     }
     .quinproLogo{
         margin: $centrar;
+        position: relative;
+        left: -15%;
+        z-index: 20;
     }
     h1{
         font-size: 20px;
@@ -73,28 +83,7 @@
     }
     /* Barra lateral*/
     .MenuLateral{ 
-        @include flex-fila-wrap;
-        justify-content: space-around;
-        max-width: 100%;
-        height: auto;
-        a{
-            text-align: center;
-            line-height: 200%;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 0%;
-            li{
-                border-style: none;
-                margin: 1%;
-                padding: 2%;
-                a{
-                    line-height: normal;
-                    font-size: 0.95rem;
-                }
-            }
-        }
+        display: none;
     }
     /*Contenido Productos*/
     .tituloFaq, .tituloProductos{

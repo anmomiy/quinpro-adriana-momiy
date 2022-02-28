@@ -168,8 +168,8 @@ footer {
     align-items: center;
     width: 900px;
     margin: 0 auto;
-    margin-bottom: 2%;
-    padding: 2%;
+    margin-bottom: 4%;
+    padding: 3%;
     border-style: double;
     border-color: black; }
   .indexSecDos img {
@@ -177,11 +177,12 @@ footer {
   .indexSecDos p {
     width: 48%;
     height: 400px;
-    line-height: 200%;
+    line-height: 250%;
     text-align: left;
     font-weight: 700;
-    background-color: rgba(255, 225, 205, 0.959);
-    padding: 5%;
+    background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
+    font-size: 16px;
+    padding: 8%;
     border-radius: 15%;
     margin-bottom: 0; }
 
@@ -232,7 +233,7 @@ footer {
   .contenido-nosotros p {
     width: 400px;
     height: 400px;
-    background-color: rgba(255, 225, 205, 0.959);
+    background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
     padding: 8%;
     line-height: 200%;
     border-radius: 25%; }
@@ -246,16 +247,17 @@ footer {
 .prodContenido {
   width: 75%; }
   .prodContenido .prodSeccion {
-    background-color: rgba(255, 225, 205, 0.959);
+    background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
     margin: 5%;
     padding: 2%; }
     .prodContenido .prodSeccion ol {
       padding: 0%; }
       .prodContenido .prodSeccion ol li {
         margin: 2% auto;
-        background-color: #ffbe93;
+        background-color: #fdd1b4;
+        border: none;
         border-radius: 5%;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center; }
     .prodContenido .prodSeccion h4 {
       font-weight: 700;
@@ -266,14 +268,6 @@ footer {
       display: block;
       border-top-left-radius: 5%;
       border-top-right-radius: 5%; }
-    .prodContenido .prodSeccion .prod-ofertas {
-      color: #b6ac29; }
-    .prodContenido .prodSeccion .prod-res {
-      color: #ca090991; }
-    .prodContenido .prodSeccion .prod-cerdo {
-      color: #ce6d7d; }
-    .prodContenido .prodSeccion .prod-pollo {
-      color: #b98930; }
 
 .flex-faq {
   z-index: 10; }
@@ -301,7 +295,7 @@ footer {
       padding-top: 1.5rem;
       position: relative;
       width: 100%;
-      background: rgba(255, 225, 205, 0.959);
+      background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%);
       border-bottom: 1px solid rgba(255, 255, 255, 0.966);
       margin-bottom: 1px;
       padding-bottom: 0.5rem; }
@@ -356,7 +350,7 @@ footer {
     padding: 2%;
     width: 450px;
     height: 450px;
-    background-color: rgba(255, 225, 205, 0.959); }
+    background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%); }
     .contactoUno div img {
       width: 40px;
       height: 40px;
@@ -387,9 +381,18 @@ footer {
   .flex-header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end; }
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    justify-self: flex-end; }
+  .navbar {
+    width: 30%;
+    z-index: 18; }
   .quinproLogo {
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    left: -15%;
+    z-index: 20; }
   h1 {
     font-size: 20px; }
   /*Carrusel*/
@@ -433,26 +436,7 @@ footer {
     top: 0px; }
   /* Barra lateral*/
   .MenuLateral {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 100%;
-    height: auto; }
-    .MenuLateral a {
-      text-align: center;
-      line-height: 200%; }
-    .MenuLateral ul {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 0%; }
-      .MenuLateral ul li {
-        border-style: none;
-        margin: 1%;
-        padding: 2%; }
-        .MenuLateral ul li a {
-          line-height: normal;
-          font-size: 0.95rem; }
+    display: none; }
   /*Contenido Productos*/
   .tituloFaq, .tituloProductos, .tituloFaq {
     font-size: 1.1rem;
@@ -489,7 +473,10 @@ footer {
   .flex-header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 15; }
   .navbar {
     width: 30%; }
   .quinproLogo {
@@ -544,28 +531,7 @@ footer {
     position: sticky;
     top: 0px; }
   .MenuLateral {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: auto; }
-    .MenuLateral a {
-      line-height: 250%; }
-    .MenuLateral ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 0%; }
-      .MenuLateral ul li {
-        padding: 2%;
-        min-width: 88px;
-        width: 50%;
-        margin-left: 0%;
-        margin-right: 0%; }
-        .MenuLateral ul li a {
-          line-height: normal;
-          font-size: 0.8rem; }
+    display: none; }
   #ofertas, #res, #pollo, #cerdo {
     scroll-margin-top: 150px; }
   .prodContenido {
@@ -610,3 +576,7 @@ footer {
   /*Sombra párrafos*/
   -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
   box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35); }
+
+.shadow-drop-2-center {
+  /*Sombra cajas*/
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); }

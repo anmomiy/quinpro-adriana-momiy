@@ -22,8 +22,8 @@
         align-items: center;
         width: 900px;
         margin: $centrar;
-        margin-bottom: 2%;
-        padding: 2%;
+        margin-bottom: 4%;
+        padding: 3%;
         border-style:double;
         border-color: $dark;
     }
@@ -33,11 +33,12 @@
     p{
         width: 48%;
         height: 400px;
-        line-height: 200%;
+        line-height: 250%;
         text-align:left;
         font-weight: 700;
-        background-color: $p-bg;
-        padding: 5%;
+        background: $p-bg;
+        font-size: 16px;
+        padding: 8%;
         border-radius: 15%;
         margin-bottom: 0;
     }

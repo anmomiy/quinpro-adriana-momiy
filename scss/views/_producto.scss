@@ -1,6 +1,5 @@
 @import '..//utilities/variables';
 @import '..//utilities/mixin';
-@import '..//utilities/map';
 /*Main Productos*/
 .tituloProductos{
     font-size: 1.5rem;
@@ -10,7 +9,7 @@
 .prodContenido{
     width: 75%;
     .prodSeccion{
-        background-color: $p-bg;
+        background: $p-bg;
         margin: 5%;
         padding: 2%;
         ol{
@@ -18,8 +17,9 @@
             li{
                 margin: 2% auto;
                 background-color: $adicional;
+                border: none;
                 border-radius: 5%;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
             }
         }
@@ -33,11 +33,6 @@
             display: block;
             border-top-left-radius: 5%;
             border-top-right-radius: 5%;
-        }
-        @each $tipo-producto, $color in $color-titulo{
-            .prod-#{$tipo-producto}{
-                color: $color;
-            }
         }
     }   
 }
