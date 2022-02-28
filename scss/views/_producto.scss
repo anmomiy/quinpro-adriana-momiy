@@ -1,40 +1,49 @@
 @import '..//utilities/variables';
 @import '..//utilities/mixin';
 /*Main Productos*/
-.tituloProductos{
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
-}
-.prodContenido{
-    width: 75%;
-    .prodSeccion{
-        background: $p-bg;
-        margin: 5%;
-        padding: 2%;
-        ol{
-            padding:0%;
-            li{
-                margin: 2% auto;
-                background-color: $adicional;
-                border: none;
-                border-radius: 5%;
-                font-size: 16px;
-                text-align: center;
-                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+.flex-prod{
+    display:flex;
+    flex-direction: row;
+    .tituloProductos{
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+    }
+    #ofertas, #res, #pollo, #cerdo{
+        scroll-margin-top: 100px;
+    }
+    .prodContenido{
+        width: 100%;
+        .prodSeccion{
+            background: $p-bg;
+            margin: 5%;
+            padding: 2%;
+            ol{
+                padding:0%;
+                li{
+                    margin: 2% auto;
+                    background-color: $adicional;
+                    border: none;
+                    border-radius: 5%;
+                    font-size: 16px;
+                    text-align: center;
+                    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                }
             }
-        }
-        h4{
-            font-weight: 700;
-            color: $dark;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        img{
-            display: block;
-            border-top-left-radius: 5%;
-            border-top-right-radius: 5%;
-        }
-    }   
+            h4{
+                font-weight: 700;
+                color: $dark;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            img{
+                display: block;
+                border-top-left-radius: 5%;
+                border-top-right-radius: 5%;
+            }
+        }   
+    }
+
 }
+
 

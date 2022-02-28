@@ -1,7 +1,7 @@
 @import '..//utilities/variables';
 @import '..//utilities/mixin';
 /* Tablet */
-@media (min-width: 481px) and (max-width: 992px){
+@media (min-width: 576px) and (max-width: 992px){
     /*Header*/
     .flex-header{
         display: flex;
@@ -27,14 +27,15 @@
     /*Carrusel*/
     .carrusel{
         .carousel{
-            width: 90%;
+            width: 100vw;
         }
     }
     /*Seccion dos Index */
     .indexSecDos{
         .contSecDos{
             flex-wrap: wrap;
-            width: 480px;
+            width: min-content;
+            padding: 2%;
             justify-content: center;
         }
         p{
@@ -46,15 +47,11 @@
     } 
     /*Seccion tres Index */
     .indexSecTres{
-        h4{
-            max-width: 250px;
-        }
+        
         section{
-            div{
-                margin: 0 0% 2% 0%;
-            }
-            section{
-                margin: $centrar;
+            margin: $centrar;
+            h4{
+                max-width: 250px;
             } 
         } 
     }
@@ -81,7 +78,7 @@
         grid-template-columns: 100%;
     }
     /* Barra lateral*/
-    .MenuLateral{ 
+    .barraIzquierda{ 
         display: none;
     }
     /*Contenido Productos*/
@@ -96,6 +93,7 @@
     }
     .prodContenido{
         width: 100%;
+        margin: $centrar;
     }
     /*FAQ*/
     .flex-faq{
@@ -130,5 +128,9 @@
         div{
             width: 450px;
         }
+    }
+    .cajaFormulario{
+        min-width: fit-content;
+
     }
 }

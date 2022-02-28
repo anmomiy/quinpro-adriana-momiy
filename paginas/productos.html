@@ -15,7 +15,7 @@
             <div class="quinproLogo">
                 <a href=..//index.html >                    
                     <picture>
-                        <source media="(max-width: 480px)" srcset="..//assets/imagenes/logo-quinpro-180x51.jpg">
+                        <source media="(max-width: 575px)" srcset="..//assets/imagenes/logo-quinpro-180x51.jpg">
                         <source media="(max-width: 922px)" srcset="..//assets/imagenes/logo-quinpro-250x71.jpg">
                         <source media="(min-width: 923px)" srcset="..//assets/imagenes/logo-quinpro-320x91.jpg">
                         <img src="..//assets/imagenes/logo-quinpro-min.JPG" alt="logo">
@@ -66,141 +66,139 @@
                 </div>
             </nav>
         </header>
-        <main class="flex-productos container-fluid">
-            <div class="row">
-                <section class="col-lg-3 barraIzquierda">
-                    <nav class="MenuLateral">
-                    <a href="./productos.html" class="tituloProductos">Productos</a>
-                    <!--Menu lateral-->
-                        <ul>
-                            <li><a href="./productos.html#ofertas">Ofertas</a></li>
-                            <li><a href="./productos.html#res">Carne de Res</a></li>
-                            <li><a href="./productos.html#cerdo">Carne de Cerdo</a></li>
-                            <li><a href="./productos.html#pollo">Pollo / Otros</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section class="col-lg-9 prodContenido"> <!--Productos en orden alfabético-->
-                    <div class="prodSeccion shadow-drop-2-center">
-                        <h3 id="ofertas" class="prod-ofertas">Ofertas del Mes</h3>
-                        <ol class="d-flex flex-wrap">
+        <main class="flex-prod">
+            <section class="barraIzquierda">
+                <nav class="MenuLateral">
+                <a href="./productos.html" class="tituloProductos">Productos</a>
+                <!--Menu lateral-->
+                    <ul>
+                        <a href="./productos.html#ofertas"><li>Ofertas</li></a>
+                        <a href="./productos.html#res"><li>Carne de Res</li></a>
+                        <a href="./productos.html#cerdo"><li>Carne de Cerdo</li></a>
+                        <a href="./productos.html#pollo"><li>Pollo / Otros</li></a>
+                    </ul>
+                </nav>
+            </section>
+            <section class="prodContenido"> <!--Productos en orden alfabético-->
+                <div class="prodSeccion shadow-drop-2-center">
+                    <h3 id="ofertas" class="prod-ofertas">Ofertas del Mes</h3>
+                    <ol class="d-flex flex-wrap">
+                    <li class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..//assets/imagenes/bife-ancho-min.jpg" alt="Card image cap">
+                        <div class="card-body cuerpoCarta">
+                            <h4>Bife Ancho</h4>  
+                            <p class="card-text">S/49.00 x kg. Paquetes de aprox 1kg. Oferta válida hasta agotar stock.</p>
+                        </div>
+                    </li>
+                    <li class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..//assets/imagenes/bife-angosto-min.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Bife Angosto</h4>  
+                            <p class="card-text">S/49.00 x kg. Paquetes de aprox 1kg. Oferta válida hasta agotar stock.</p>
+                        </div>
+                    </li>
+                    </ol>
+                </div>
+                <div class="prodSeccion shadow-drop-2-center">
+                    <h3 id="res" class="prod-res">Carne de Res</h3>
+                    <ol class="d-flex flex-wrap">
                         <li class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..//assets/imagenes/bife-ancho-min.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="..//assets/imagenes/bisteck-lomo-min.jpg" alt="Card image cap">
                             <div class="card-body cuerpoCarta">
-                                <h4>Bife Ancho</h4>  
-                                <p class="card-text">S/49.00 x kg. Paquetes de aprox 1kg. Oferta válida hasta agotar stock.</p>
+                                <h4>Bisteck Bola de Lomo</h4>  
+                                <p class="card-text">S/35.00 x kg. Paquetes de 4 filetes de 120grs aprox.</p>
                             </div>
                         </li>
                         <li class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..//assets/imagenes/bife-angosto-min.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="..//assets/imagenes/carne-molida-min.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4>Bife Angosto</h4>  
-                                <p class="card-text">S/49.00 x kg. Paquetes de aprox 1kg. Oferta válida hasta agotar stock.</p>
+                                <h4>Carne Molida</h4>  
+                                <p class="card-text">S/32.00 x kg. Paquetes de 500grs aprox.</p>
                             </div>
                         </li>
-                        </ol>
-                    </div>
-                    <div class="prodSeccion shadow-drop-2-center">
-                        <h3 id="res" class="prod-res">Carne de Res</h3>
-                        <ol class="d-flex flex-wrap">
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/bisteck-lomo-min.jpg" alt="Card image cap">
-                                <div class="card-body cuerpoCarta">
-                                    <h4>Bisteck Bola de Lomo</h4>  
-                                    <p class="card-text">S/35.00 x kg. Paquetes de 4 filetes de 120grs aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/carne-molida-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Carne Molida</h4>  
-                                    <p class="card-text">S/32.00 x kg. Paquetes de 500grs aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/entrana-fina-min.jpg" alt="Card image cap">
-                                <div class="card-body cuerpoCarta">
-                                    <h4>Entraña Fina</h4>  
-                                    <p class="card-text">S/45.00 x kg. Paquetes de 1kg aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/guiso-especial-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Guiso Especial</h4>  
-                                    <p class="card-text">S/33.00 x kg. Paquetes de 500grs aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/lomo-fino-min.jpg" alt="Card image cap">
-                                <div class="card-body cuerpoCarta">
-                                    <h4>Lomo Fino</h4>  
-                                    <p class="card-text">S/69.00 x kg. Paquetes de 1kg aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/picanha-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Picaña</h4>  
-                                    <p class="card-text">S/59.00 x kg. Paquete de 1.5kg aprox.</p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="prodSeccion shadow-drop-2-center">
-                        <h3 id="cerdo" class="prod-cerdo">Carne de Cerdo</h3>
-                        <ol class="d-flex flex-wrap">
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/costilla-cerdo-min.jpg" alt="Card image cap">
-                                <div class="card-body cuerpoCarta">
-                                    <h4>Costilla</h4>  
-                                    <p class="card-text">S/33.00 x kg. Paquete de 1.3kg aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/molida-cerdo-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Molida</h4>  
-                                    <p class="card-text">S/19.00 x kg. Paquete de 500grs aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/panceta-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Panceta c/p c/h</h4>  
-                                    <p class="card-text">S/27.00 x kg. Paquete de 1kg aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/solomillo-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Solomillo</h4>  
-                                    <p class="card-text">S/32.00 x kg. Paquete de 1kg aprox.</p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="prodSeccion shadow-drop-2-center">
-                        <h3 id="pollo" class="prod-pollo">Pollo / Otros</h3>
-                        <ol class="d-flex flex-wrap">
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/pechuga-pollo-min.jpg" alt="Card image cap">
-                                <div class="card-body cuerpoCarta">
-                                    <h4>Pechuga de pollo</h4>  
-                                    <p class="card-text">S/18.00 x kg. Paquete de 2kg aprox.</p>
-                                </div>
-                            </li>
-                            <li class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..//assets/imagenes/hamburguesa-clasica-min.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4>Hamburguesa clásica</h4>  
-                                    <p class="card-text">S/27.50 x kg. Cada paquete contiene 8 hamburguesas de 150grs.</p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </section>
-            </div>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/entrana-fina-min.jpg" alt="Card image cap">
+                            <div class="card-body cuerpoCarta">
+                                <h4>Entraña Fina</h4>  
+                                <p class="card-text">S/45.00 x kg. Paquetes de 1kg aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/guiso-especial-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Guiso Especial</h4>  
+                                <p class="card-text">S/33.00 x kg. Paquetes de 500grs aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/lomo-fino-min.jpg" alt="Card image cap">
+                            <div class="card-body cuerpoCarta">
+                                <h4>Lomo Fino</h4>  
+                                <p class="card-text">S/69.00 x kg. Paquetes de 1kg aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/picanha-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Picaña</h4>  
+                                <p class="card-text">S/59.00 x kg. Paquete de 1.5kg aprox.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="prodSeccion shadow-drop-2-center">
+                    <h3 id="cerdo" class="prod-cerdo">Carne de Cerdo</h3>
+                    <ol class="d-flex flex-wrap">
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/costilla-cerdo-min.jpg" alt="Card image cap">
+                            <div class="card-body cuerpoCarta">
+                                <h4>Costilla</h4>  
+                                <p class="card-text">S/33.00 x kg. Paquete de 1.3kg aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/molida-cerdo-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Molida</h4>  
+                                <p class="card-text">S/19.00 x kg. Paquete de 500grs aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/panceta-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Panceta c/p c/h</h4>  
+                                <p class="card-text">S/27.00 x kg. Paquete de 1kg aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/solomillo-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Solomillo</h4>  
+                                <p class="card-text">S/32.00 x kg. Paquete de 1kg aprox.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="prodSeccion shadow-drop-2-center">
+                    <h3 id="pollo" class="prod-pollo">Pollo / Otros</h3>
+                    <ol class="d-flex flex-wrap">
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/pechuga-pollo-min.jpg" alt="Card image cap">
+                            <div class="card-body cuerpoCarta">
+                                <h4>Pechuga de pollo</h4>  
+                                <p class="card-text">S/18.00 x kg. Paquete de 2kg aprox.</p>
+                            </div>
+                        </li>
+                        <li class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..//assets/imagenes/hamburguesa-clasica-min.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4>Hamburguesa clásica</h4>  
+                                <p class="card-text">S/27.50 x kg. Cada paquete contiene 8 hamburguesas de 150grs.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
         </main>
         <footer class="flex-footer">
             <div class="row">

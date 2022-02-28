@@ -1,7 +1,7 @@
 @import '..//utilities/variables';
 @import '..//utilities/mixin';
 /* Mobile */
-@media (max-width: 480px){
+@media (max-width: 575px){
     /*Header*/
     .flex-header{
         display: flex;
@@ -36,7 +36,7 @@
         }
         p{
             width: 300px;
-            line-height: 200%;
+            line-height: 180%;
             margin-top: 5%;
             font-size: 16px;
             height: 300px;
@@ -63,13 +63,6 @@
         }
     }
     /*Productos*/
-    .flex-productos{
-        display: grid;
-        grid-template-areas: 
-        "barraIzquierda"
-        "prodContenido";
-        grid-template-columns: 100%;
-    }
     /*Barra Lateral*/
     .tituloFaq, .tituloProductos{
         font-size: 16px;
@@ -77,14 +70,7 @@
         font-weight: 700;
         align-self: center;
     }
-    .barraIzquierda{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        position:sticky;
-        top:0px;
-    }
-    .MenuLateral{
+    .barraIzquierda{ 
         display: none;
     }
     #ofertas, #res, #pollo, #cerdo{
@@ -92,6 +78,7 @@
     }
     .prodContenido{
         width: 100%;
+        margin: $centrar;
     }
     /*FAQ*/
     .flex-faq{
@@ -127,5 +114,8 @@
         div{
             width: 90vw;
         }
+    }
+    .cajaFormulario{
+        max-width: 95%;
     }
 }

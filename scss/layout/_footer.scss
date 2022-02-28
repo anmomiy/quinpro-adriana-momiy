@@ -54,6 +54,9 @@ footer{
     min-width: 200px;
     .footerLRedes {
         @include flex-columna;
+        width:max-content;
+        text-align: left;
+        margin: $centrar;
         a{
             text-decoration: none;
             color: $light; 
