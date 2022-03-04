@@ -36,7 +36,15 @@ footer{
         width: 200px;
     }
     form{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        text-align: left;
+        margin: $centrar;
         margin-top: 5%;
+        .botonFooter{
+            text-align: center;
+        }
     }
     label{
         color:$light;

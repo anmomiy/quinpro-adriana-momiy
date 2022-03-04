@@ -7,8 +7,13 @@
         <meta name="keywords" content="Quinpro, tienda de carne, comprar carne, carne para parrilla, venta de carne en Peru">
         <link rel="shortcut icon" href="./assets/imagenes/favicon.png">
         <title>Quinpro - Página Oficial</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
+        
     </head>
     <body>
         <header class="flex-header">
@@ -67,6 +72,19 @@
             </nav>
         </header>
         <main>
+            <section class="indexSecUno">
+                <div class="contSecUno">
+                    <h3>Quinpro, tu mejor opción en carnes</h3>
+                    <p>
+                        Ofrecemos una amplia gama de productos, desde carnes para parrilla hasta hamburguesas y pollo. Todos nuestros productos son 100% peruanos.
+                        
+                    </p>
+                    <a href="./paginas/productos.html">
+                            <button type="button" class="btnParrafo">Comprar</button>
+                    </a>
+                </div>
+                <img data-aos="fade-left" data-aos-duration="3000" src="./assets/imagenes/index-parrilla.jpg" alt="parrilla">
+            </section>
             <section class="carrusel">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -105,36 +123,20 @@
                     </button>
                 </div>
             </section>
-            <section class="indexSecDos">
-                <h3>Quinpro, tu mejor opción en carnes</h3>
-                <div class="contSecDos shadow-drop-2-center">
-                    <picture>
-                        <source media="(max-width: 575px)" srcset="./assets/imagenes/index-img-300x300.jpg">
-                        <source media="(min-width: 576px)" srcset="./assets/imagenes/index-img-400x400.jpg">
-                        <img src="./assets/imagenes/index-img-original.JPG" alt="imagen-seccion-dos">
-                    </picture>
-                    <p class="shadow-drop-2-br">
-                        Ofrecemos una amplia gama de productos, desde carnes para parrilla hasta hamburguesas y pollo. Todos nuestros productos son 100% peruanos.
-                        <a href="./paginas/productos.html">
-                            <button type="button" class="btnParrafo">Conoce más</button>
-                        </a>
-                    </p>
-                </div>
-            </section>
             <section class="indexSecTres">
                 <h3>Productos procesados con los mejores protocolos sanitarios en la puerta de tu hogar</h3>
                 <section>
                     <div>
                         <h4>No se requiere un monto mínimo de compra</h4>
-                        <img src="./assets/imagenes/minimo-compra-min.JPG" alt="minimo-compra" class="rotate-vert-center">
+                        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/imagenes/minimo-compra-min.JPG" alt="minimo-compra">
                     </div>
                     <div>
                         <h4>Costo adicional por delivery</h4>
-                        <img src="./assets/imagenes/delivery-min.JPG" alt="costo-delivery" class="rotate-vert-center">
+                        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/imagenes/delivery-min.JPG" alt="costo-delivery">
                     </div>
                     <div>
                         <h4>Despacho de lunes a sábado</h4>
-                        <img src="./assets/imagenes/fechas-entrega-min.JPG" alt="fechas-entrega" class="rotate-vert-center">
+                        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/imagenes/fechas-entrega-min.JPG" alt="fechas-entrega">
                     </div>
                 </section>
             </section>  
@@ -166,7 +168,7 @@
                             <label for="numero" class="form-label">Celular: </label>
                             <input type="text" class="form-control" id="formGroupExampleInput2">
                         </div>
-                        <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+                        <button type="submit" class="btn btn-secondary btn-sm botonFooter">Enviar</button>
                     </form>
                 </div>
                 <div class="col footerRedes">
@@ -183,6 +185,10 @@
                 <h4>&copy; Copyright 2022</h4>
             </section>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>

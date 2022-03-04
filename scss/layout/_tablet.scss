@@ -31,19 +31,26 @@
         }
     }
     /*Seccion dos Index */
-    .indexSecDos{
-        .contSecDos{
-            flex-wrap: wrap;
-            width: min-content;
-            padding: 2%;
+    .indexSecUno{
+        .contSecUno{
+            @include flex-columna;
             justify-content: center;
+            width: 90%;
+            padding: 5%;
+            p{
+                width: 90%;
+                line-height: 180%;
+                margin-top: 5%;
+                font-size: 16px;
+                padding: 5%;
+            } 
         }
-        p{
-            margin-top: 2%;
-            width: 400px;
-            max-height: 400px;
-            padding: 10%;
+        img{
+            display:none;
         }
+        background-image: url(../../assets/imagenes/index-parrilla-570x450.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
     } 
     /*Seccion tres Index */
     .indexSecTres{
