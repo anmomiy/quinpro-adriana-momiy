@@ -18,6 +18,7 @@
     width: 100%;
     align-items:center;
     background-color: $dark;
+    overflow: hidden;
     .contSecUno{
         @include flex-columna;
         align-content: space-around;
@@ -75,5 +76,15 @@
         width: 150px;
         height: 150px;
         border-radius: 10%;
+    }
+}
+/*Icono WhatsApp*/
+.iconoWpp{
+    position:fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 5;
+    img{
+        width: 60px;
     }
 }

@@ -44,7 +44,7 @@
         img{
             display:none;
         }
-        background-image: url(../../assets/imagenes/index-parrilla-480x380.jpg);
+        background-image: url(..//assets/imagenes/index-parrilla-480x380.jpg);
         background-repeat: no-repeat;
         background-position: center;
     } 
@@ -64,27 +64,53 @@
             height: 300px;
             margin-top: 5%;
             font-size: 14px;
-            padding: 10%;
+            padding: 12%;
         }
     }
     /*Productos*/
+    .flex-prod{
+        @include flex-columna;
+        .barraIzquierda{
+            width: 100%;
+            position: sticky;
+            top: 75px;
+            z-index: 10;
+            .tituloFaq, .tituloProductos{
+            display: none;
+            }
+            .MenuLateral{
+                max-width: 100%;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin:auto;
+                    a{
+                        width: 110px;
+                        
+                        
+                    }
+                    li{
+                        line-height: normal;
+                        height:50px;
+                        padding: 2%;
+                        border-style: none;
+                    }
+                }
+            }
+            
+        }
+        #ofertas, #res, #pollo, #cerdo{
+            scroll-margin-top: 150px;
+        }
+        .prodContenido{
+            width: 100%;
+            margin: $centrar;
+        }
+    }
     /*Barra Lateral*/
-    .tituloFaq, .tituloProductos{
-        font-size: 16px;
-        text-align: center;
-        font-weight: 700;
-        align-self: center;
-    }
-    .barraIzquierda{ 
-        display: none;
-    }
-    #ofertas, #res, #pollo, #cerdo{
-        scroll-margin-top: 150px;
-    }
-    .prodContenido{
-        width: 100%;
-        margin: $centrar;
-    }
+    
+    
     /*FAQ*/
     .flex-faq{
         display: flex;
@@ -118,6 +144,7 @@
         }
         div{
             width: 90vw;
+            padding: 15%;
         }
     }
     .cajaFormulario{

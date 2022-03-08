@@ -50,7 +50,9 @@ h1 {
 /*Footer*/
 footer {
   background-color: black;
-  width: 100%; }
+  width: 100%;
+  z-index: 20;
+  position: relative; }
   footer .row {
     margin: 0; }
 
@@ -97,7 +99,8 @@ footer {
 .footerRedes {
   text-align: center;
   margin: 0% 5% 2% 5%;
-  min-width: 200px; }
+  min-width: 200px;
+  z-index: 20; }
   .footerRedes .footerLRedes {
     display: flex;
     flex-direction: column;
@@ -172,7 +175,8 @@ footer {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  background-color: black; }
+  background-color: black;
+  overflow: hidden; }
   .indexSecUno .contSecUno {
     display: flex;
     flex-direction: column;
@@ -226,6 +230,15 @@ footer {
     width: 150px;
     height: 150px;
     border-radius: 10%; }
+
+/*Icono WhatsApp*/
+.iconoWpp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 5; }
+  .iconoWpp img {
+    width: 60px; }
 
 /*Nosotros*/
 .flex-nosotros {
@@ -321,7 +334,8 @@ footer {
 .accordion {
   margin: 0 auto 5%;
   width: 100%;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
   .accordion .accordionWrapper {
     list-style: none;
     margin: 0 auto;
@@ -389,7 +403,7 @@ footer {
   justify-content: center;
   flex-wrap: nowrap; }
   .contactoUno div {
-    padding: 2%;
+    padding: 5%;
     width: 450px;
     height: 450px;
     background: radial-gradient(circle, #fff3b5 0%, #f4cea1 30%, #faaa7e 69%, #ff6868 100%); }
@@ -442,7 +456,7 @@ footer {
     width: 100vw; }
   /*Seccion dos Index */
   .indexSecUno {
-    background-image: url(../../assets/imagenes/index-parrilla-570x450.jpg);
+    background-image: url(..//assets/imagenes/index-parrilla-570x450.jpg);
     background-repeat: no-repeat;
     background-position: center; }
     .indexSecUno .contSecUno {
@@ -477,33 +491,46 @@ footer {
       margin-top: 5%;
       width: 400px;
       height: 400px;
-      padding: 12%; }
+      padding: 18%; }
   /*Productos*/
-  .flex-productos {
+  .flex-prod, .flex-faq {
     display: grid;
     grid-template-areas: "barraIzquierda" "prodContenido";
-    grid-template-columns: 100%; }
-  /* Barra lateral*/
-  .barraIzquierda {
-    display: none; }
-  /*Contenido Productos*/
-  .tituloFaq, .tituloProductos, .tituloFaq {
-    font-size: 1.1rem;
-    text-align: center;
-    font-weight: 700;
-    align-self: center; }
-  #ofertas, #res, #pollo, #cerdo {
-    scroll-margin-top: 100px; }
-  .prodContenido {
-    width: 100%;
-    margin: 0 auto; }
+    grid-template-columns: 100%;
+    /* Barra lateral*/
+    /*Contenido Productos*/ }
+    .flex-prod .barraIzquierda, .flex-faq .barraIzquierda {
+      width: 100%;
+      position: sticky;
+      top: 95px;
+      z-index: 10; }
+      .flex-prod .barraIzquierda .MenuLateral, .flex-faq .barraIzquierda .MenuLateral {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        z-index: 10; }
+        .flex-prod .barraIzquierda .MenuLateral .tituloProductos, .flex-faq .barraIzquierda .MenuLateral .tituloProductos, .flex-prod .barraIzquierda .MenuLateral .tituloFaq, .flex-faq .barraIzquierda .MenuLateral .tituloFaq {
+          display: none; }
+        .flex-prod .barraIzquierda .MenuLateral ul, .flex-faq .barraIzquierda .MenuLateral ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%; }
+          .flex-prod .barraIzquierda .MenuLateral ul li, .flex-faq .barraIzquierda .MenuLateral ul li {
+            border-style: none; }
+    .flex-prod #ofertas, .flex-faq #ofertas, .flex-prod #res, .flex-faq #res, .flex-prod #pollo, .flex-faq #pollo, .flex-prod #cerdo, .flex-faq #cerdo {
+      scroll-margin-top: 200px; }
+    .flex-prod .prodContenido, .flex-faq .prodContenido {
+      width: 100%;
+      margin: 0 auto; }
   /*FAQ*/
   .flex-faq {
     flex-direction: column; }
+    .flex-faq #sentrega, .flex-faq #sproductos, .flex-faq #snosotros, .flex-faq #otros {
+      scroll-margin-top: 250px; }
   .faqPrincipal {
     width: 100%; }
-  #sentrega, #sproductos, #snosotros, #otros {
-    scroll-margin-top: 100px; }
   .accordionWrapper {
     margin: 0 auto;
     width: 90%; }
@@ -519,7 +546,8 @@ footer {
     .contactoUno iframe {
       width: 450px; }
     .contactoUno div {
-      width: 450px; }
+      width: 450px;
+      padding: 15%; }
   .cajaFormulario {
     min-width: fit-content; } }
 
@@ -544,7 +572,7 @@ footer {
     width: 100%; }
   /*Seccion dos Index */
   .indexSecUno {
-    background-image: url(../../assets/imagenes/index-parrilla-480x380.jpg);
+    background-image: url(..//assets/imagenes/index-parrilla-480x380.jpg);
     background-repeat: no-repeat;
     background-position: center; }
     .indexSecUno .contSecUno {
@@ -577,21 +605,38 @@ footer {
       height: 300px;
       margin-top: 5%;
       font-size: 14px;
-      padding: 10%; }
+      padding: 12%; }
   /*Productos*/
+  .flex-prod, .flex-faq {
+    display: flex;
+    flex-direction: column; }
+    .flex-prod .barraIzquierda, .flex-faq .barraIzquierda {
+      width: 100%;
+      position: sticky;
+      top: 75px;
+      z-index: 10; }
+      .flex-prod .barraIzquierda .tituloFaq, .flex-faq .barraIzquierda .tituloFaq, .flex-prod .barraIzquierda .tituloProductos, .flex-faq .barraIzquierda .tituloProductos, .flex-prod .barraIzquierda .tituloFaq, .flex-faq .barraIzquierda .tituloFaq {
+        display: none; }
+      .flex-prod .barraIzquierda .MenuLateral, .flex-faq .barraIzquierda .MenuLateral {
+        max-width: 100%; }
+        .flex-prod .barraIzquierda .MenuLateral ul, .flex-faq .barraIzquierda .MenuLateral ul {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin: auto; }
+          .flex-prod .barraIzquierda .MenuLateral ul a, .flex-faq .barraIzquierda .MenuLateral ul a {
+            width: 110px; }
+          .flex-prod .barraIzquierda .MenuLateral ul li, .flex-faq .barraIzquierda .MenuLateral ul li {
+            line-height: normal;
+            height: 50px;
+            padding: 2%;
+            border-style: none; }
+    .flex-prod #ofertas, .flex-faq #ofertas, .flex-prod #res, .flex-faq #res, .flex-prod #pollo, .flex-faq #pollo, .flex-prod #cerdo, .flex-faq #cerdo {
+      scroll-margin-top: 150px; }
+    .flex-prod .prodContenido, .flex-faq .prodContenido {
+      width: 100%;
+      margin: 0 auto; }
   /*Barra Lateral*/
-  .tituloFaq, .tituloProductos, .tituloFaq {
-    font-size: 16px;
-    text-align: center;
-    font-weight: 700;
-    align-self: center; }
-  .barraIzquierda {
-    display: none; }
-  #ofertas, #res, #pollo, #cerdo {
-    scroll-margin-top: 150px; }
-  .prodContenido {
-    width: 100%;
-    margin: 0 auto; }
   /*FAQ*/
   .flex-faq {
     display: flex;
@@ -615,7 +660,8 @@ footer {
     .contactoUno iframe {
       width: 90vw; }
     .contactoUno div {
-      width: 90vw; }
+      width: 90vw;
+      padding: 15%; }
   .cajaFormulario {
     max-width: 95%; } }
 
