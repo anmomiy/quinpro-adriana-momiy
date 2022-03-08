@@ -549,7 +549,10 @@ footer {
       width: 450px;
       padding: 15%; }
   .cajaFormulario {
-    min-width: fit-content; } }
+    min-width: fit-content; }
+  .iconoWpp {
+    bottom: 15px;
+    right: 15px; } }
 
 /* Mobile */
 @media (max-width: 575px) {
@@ -663,7 +666,10 @@ footer {
       width: 90vw;
       padding: 15%; }
   .cajaFormulario {
-    max-width: 95%; } }
+    max-width: 95%; }
+  .iconoWpp {
+    bottom: 5px;
+    right: 5px; } }
 
 /*Animaciones*/
 .shadow-drop-2-br {
